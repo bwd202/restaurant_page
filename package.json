@@ -4,8 +4,8 @@
   "description": "Odin project #10",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch"
   },
   "author": "bwd",
   "license": "ISC",
