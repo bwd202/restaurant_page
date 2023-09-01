@@ -1,0 +1,16 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "Odin project #10",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "author": "bwd",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
