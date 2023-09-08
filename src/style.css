@@ -1,7 +1,3 @@
-* {
-    /* border: 1px red dotted; */
-} 
-
 body {
     min-height: 100vh;
     color: white;
@@ -10,6 +6,8 @@ body {
     /* justify-content: center; */
     background-color: black;
     background-image: url(./assets/jason-leung-poI7DelFiVA-unsplash.jpeg);
+    font-family: 'urbanist';
+    font-size: 1.5em;
 }
 
 #header, #footer {

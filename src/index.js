@@ -1,4 +1,4 @@
 import './style.css'
-// import backgroundImage from './assets_folder/body_image.jpg'
+import "@fontsource/urbanist";
 
 console.log('it\'s alive!')
