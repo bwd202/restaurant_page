@@ -12,3 +12,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#header, #footer {
+    background-color: rgba(0,0,0,0.5);
+}
