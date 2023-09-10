@@ -14,6 +14,10 @@ let socialDiv = document.getElementById('socials')
 
 // socialDiv.appendChild(facebook)
 
-let menuBtn = document.querySelector('#navbar :last-child')
+let aboutBtn = document.querySelector('#navbar :last-child')
+
+aboutBtn.addEventListener('click', loadPage)
+
+let menuBtn = document.querySelector('#navbar :first-child')
 
 menuBtn.addEventListener('click', loadPage)

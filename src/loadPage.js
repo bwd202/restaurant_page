@@ -1,5 +1,6 @@
 export {loadPage}
 import { aboutUs } from './aboutUs';
+import {menu} from './menu'
 
 function loadPage(event) {
 
@@ -17,6 +18,11 @@ function loadPage(event) {
 
         title.innerHTML = aboutUs.title
         body.innerHTML = aboutUs.content
+
+    } else if (module === 'Menu') {
+
+        title.innerHTML = menu.title
+        body.innerHTML = menu.content
     }
 
     container.appendChild(title)
