@@ -1,2 +1,3 @@
-# restaurant_page
-Odin project #10
+# pagoda restaurant
+
+a landing page concept using javascript modules

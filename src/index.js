@@ -3,7 +3,7 @@ import "@fontsource/urbanist";
 // import Icon from './assets/facebook.svg'
 import {loadPage} from './loadPage'
 
-let socialDiv = document.getElementById('socials')
+// let socialDiv = document.getElementById('socials')
 
 // let facebook = new Image()
 
