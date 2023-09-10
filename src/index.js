@@ -2,7 +2,6 @@ import './style.css'
 import "@fontsource/urbanist";
 // import Icon from './assets/facebook.svg'
 import {loadPage} from './loadPage'
-import { aboutUs } from './aboutUs';
 
 let socialDiv = document.getElementById('socials')
 
