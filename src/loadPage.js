@@ -12,6 +12,11 @@ function loadPage(event) {
 
     let container = document.querySelector('#modules')
 
+    if(container.hasChildNodes()) {
+
+        container.innerHTML = ''
+    }
+
     let module = event.target.textContent
 
     if(module === 'About Us') {

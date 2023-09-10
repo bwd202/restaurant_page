@@ -83,6 +83,8 @@ var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_g
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -127,14 +129,18 @@ body {
 }
 
 #modules {
-    width: 70vw;
-    height: 100%;
+    display: grid;
+    justify-items: center;
+    width: 85%;
+    height: 80%;
     background-color: rgba(255, 217, 0, 0.25);
+    padding: 30px;
+    margin: 50px;
 }
 
 .button {
     cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;AACb;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,6BAA6B;IAC7B,uBAAuB;IACvB,yDAAqD;IACrD,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,iCAAiC;IACjC,mBAAmB;AACvB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,yCAAyC;AAC7C;;AAEA;IACI,eAAe;AACnB","sourcesContent":["* {\n    margin: 0;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    /* justify-content: center; */\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n#header, #footer {\n    background-color: rgba(0,0,0,0.5);\n    align-items: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n#content {\n    display: flex;\n    justify-content: center;\n}\n\n#modules {\n    width: 70vw;\n    height: 100%;\n    background-color: rgba(255, 217, 0, 0.25);\n}\n\n.button {\n    cursor: pointer;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,6BAA6B;IAC7B,uBAAuB;IACvB,yDAAqD;IACrD,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,iCAAiC;IACjC,mBAAmB;AACvB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,eAAe;AACnB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    /* justify-content: center; */\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n#header, #footer {\n    background-color: rgba(0,0,0,0.5);\n    align-items: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n#content {\n    display: flex;\n    justify-content: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n.button {\n    cursor: pointer;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -714,6 +720,11 @@ function loadPage(event) {
     let body = document.createElement('p')
 
     let container = document.querySelector('#modules')
+
+    if(container.hasChildNodes()) {
+
+        container.innerHTML = ''
+    }
 
     let module = event.target.textContent
 
