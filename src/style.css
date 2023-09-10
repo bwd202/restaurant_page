@@ -1,3 +1,7 @@
+:root {
+    --softBlack: rgba(0,0,0,0.5);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +21,7 @@ body {
 }
 
 #header, #footer {
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--softBlack);
     align-items: center;
 }
 
@@ -26,8 +30,18 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+#footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #address {
+    justify-self: center;
+} */
+
 #title {
     justify-self: center;
+    justify-content: center;
 }
 
 #navbar {
@@ -53,6 +67,12 @@ body {
     background-color: rgba(255, 217, 0, 0.25);
     padding: 30px;
     margin: 50px;
+}
+
+#modules p {
+
+    padding: 0 100px;
+    background-color: var(--softBlack);
 }
 
 .button {

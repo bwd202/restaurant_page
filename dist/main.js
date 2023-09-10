@@ -81,7 +81,11 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `* {
+___CSS_LOADER_EXPORT___.push([module.id, `:root {
+    --softBlack: rgba(0,0,0,0.5);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,7 +104,7 @@ body {
 }
 
 #header, #footer {
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--softBlack);
     align-items: center;
 }
 
@@ -109,8 +113,18 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+#footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #address {
+    justify-self: center;
+} */
+
 #title {
     justify-self: center;
+    justify-content: center;
 }
 
 #navbar {
@@ -138,9 +152,15 @@ body {
     margin: 50px;
 }
 
+#modules p {
+
+    padding: 0 100px;
+    background-color: var(--softBlack);
+}
+
 .button {
     cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,6BAA6B;IAC7B,uBAAuB;IACvB,yDAAqD;IACrD,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,iCAAiC;IACjC,mBAAmB;AACvB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,eAAe;AACnB","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    /* justify-content: center; */\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n#header, #footer {\n    background-color: rgba(0,0,0,0.5);\n    align-items: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n#content {\n    display: flex;\n    justify-content: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n.button {\n    cursor: pointer;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,6BAA6B;IAC7B,uBAAuB;IACvB,yDAAqD;IACrD,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,kCAAkC;IAClC,mBAAmB;AACvB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;;GAEG;;AAEH;IACI,oBAAoB;IACpB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;;IAEI,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA;IACI,eAAe;AACnB","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    /* justify-content: center; */\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n#header, #footer {\n    background-color: var(--softBlack);\n    align-items: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#footer {\n    display: flex;\n    justify-content: space-between;\n}\n\n/* #address {\n    justify-self: center;\n} */\n\n#title {\n    justify-self: center;\n    justify-content: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n#content {\n    display: flex;\n    justify-content: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n#modules p {\n\n    padding: 0 100px;\n    background-color: var(--softBlack);\n}\n\n.button {\n    cursor: pointer;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
