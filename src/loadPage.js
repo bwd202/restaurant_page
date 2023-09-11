@@ -30,7 +30,5 @@ function loadPage(event) {
         body.innerHTML = menu.content
     }
 
-    container.appendChild(title)
-    container.appendChild(body)
-
+    container.append(title, body)
 }
