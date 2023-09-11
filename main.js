@@ -759,9 +759,7 @@ function loadPage(event) {
         body.innerHTML = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.content
     }
 
-    container.appendChild(title)
-    container.appendChild(body)
-
+    container.append(title, body)
 }
 
 /***/ }),
