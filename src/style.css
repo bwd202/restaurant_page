@@ -20,6 +20,8 @@ body {
     font-size: 1.5em;
 }
 
+/* HEADER */
+
 #header, #footer {
     background-color: var(--softBlack);
     align-items: center;
@@ -30,14 +32,14 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+#home {
+    position: relative;
+}
+
 #footer {
     display: flex;
     justify-content: space-between;
 }
-
-/* #address {
-    justify-self: center;
-} */
 
 #title {
     justify-self: center;
@@ -80,9 +82,9 @@ body {
 }
 
 .icon {
-    scale: 2;
+    scale: 2.5;
     position: absolute;
     left: 100px;
-    top: 50px;
+    top: -20px;
     border: 1px solid white;
 }
