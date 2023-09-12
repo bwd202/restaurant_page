@@ -1,23 +1,28 @@
 import './style.css'
 import "@fontsource/urbanist";
-// import Icon from './assets/facebook.svg'
 import {loadPage} from './loadPage'
+import facebook from './assets/facebook.svg'
+import yelp from './assets/yelp.svg'
+import bbb from './assets/symbol.png'
 
-// let socialDiv = document.getElementById('socials')
+// ICONS
+let facebookLogo = new Image()
+let yelpLogo = new Image()
+let bbbLogo = new Image(50,50)
 
-// let facebook = new Image()
+facebookLogo.src = facebook
+yelpLogo.src = yelp
+bbbLogo.src = bbb
 
-// facebook.src = Icon
+document.querySelector('#socials p').append(facebookLogo, yelpLogo, bbbLogo)
 
-// facebook.setAttribute('width', '100')
-// facebook.setAttribute('height', '100')
+facebookLogo.classList.add('icon')
+yelpLogo.classList.add('icon')
+bbbLogo.classList.add('png')
 
-// socialDiv.appendChild(facebook)
-
+// BUTTONS
 let aboutBtn = document.querySelector('#navbar :last-child')
-
-aboutBtn.addEventListener('click', loadPage)
-
 let menuBtn = document.querySelector('#navbar :first-child')
 
+aboutBtn.addEventListener('click', loadPage)
 menuBtn.addEventListener('click', loadPage)
