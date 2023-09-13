@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     color: white;
     display: grid;
-    grid-template-rows: 100px 2fr 1fr;
+    grid-template-rows: 100px 2fr 250px;
     background-color: black;
     background-image: url(./assets/pagoda-background.jpg);
     background-repeat: no-repeat;
@@ -99,18 +99,21 @@ body {
 /* #FOOTER */
 
 #footer {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
     justify-items: center;
+}
+
+#socials, #address {
+    align-self: center;
 }
 
 #socials p {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 #map {
-    height: 100%;
-    width: 50%;
+    margin: 15px;
+    width: 60%;
 }
