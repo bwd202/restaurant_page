@@ -6,9 +6,9 @@ import yelp from './assets/yelp.svg'
 import bbb from './assets/bbb.svg'
 
 // ICONS
-let facebookLogo = new Image(50,50)
-let yelpLogo = new Image(50, 50)
-let bbbLogo = new Image(50, 50)
+let facebookLogo = new Image(30,30)
+let yelpLogo = new Image(30, 30)
+let bbbLogo = new Image(30,30)
 
 facebookLogo.src = facebook
 yelpLogo.src = yelp
