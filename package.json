@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "webpack --progress --mode=production",
-    "watch": "webpack --progress --watch"
+    "watch": "webpack --progress --watch",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "bwd",
   "license": "ISC",
