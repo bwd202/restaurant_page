@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     color: white;
     display: grid;
-    grid-template-rows: min-content 2fr 1fr;
+    grid-template-rows: 100px 2fr 1fr;
     background-color: black;
     background-image: url(./assets/pagoda-background.jpg);
     background-repeat: no-repeat;
@@ -44,6 +44,7 @@ body {
 #header {
     display: inline-grid;
     grid-template-columns: 1fr 2fr 1fr;
+    padding: 20px 0;
 }
 
 #home {
@@ -53,15 +54,11 @@ body {
 
 #home p {
     margin-left: 60px;
-}
-
-/* #home .button {
-    scale: 2.5;
+    scale: 1.2;
     position: absolute;
-    left: 100px;
-    top: -20px;
+    top: 5px;
     border: 1px solid white;
-} */
+}
 
 #title {
     justify-self: center;
