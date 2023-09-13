@@ -95,7 +95,7 @@ body {
     min-height: 100vh;
     color: white;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: min-content 2fr 1fr;
     background-color: black;
     background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body {
 
 #header, #footer {
     background-color: var(--softBlack);
-    align-content: center;
+    /* align-content: center; */
 }
 
 #header {
@@ -131,15 +131,20 @@ body {
 
 #home {
     position: relative;
+    /* display: grid; */
 }
 
-#home .button {
+#home p {
+    margin-left: 60px;
+}
+
+/* #home .button {
     scale: 2.5;
     position: absolute;
     left: 100px;
     top: -20px;
     border: 1px solid white;
-}
+} */
 
 #title {
     justify-self: center;
@@ -159,15 +164,12 @@ body {
 
 #content {
     display: grid;
-    /* justify-items: center; */
-    justify-content: center;
-    /* align-content: center; */
+    justify-items: center;
 }
 
 #modules {
     display: grid;
-    /* justify-items: center; */
-    justify-content: center;
+    justify-items: center;
     width: 85%;
     height: 80%;
     background-color: rgba(255, 217, 0, 0.25);
@@ -184,9 +186,9 @@ body {
 
 #footer {
     display: inline-grid;
-    grid-template-columns: repeat(3, );
-    /* justify-content: center; */
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
+    justify-items: center;
 }
 
 #socials p {
@@ -197,7 +199,7 @@ body {
 #map {
     height: 100%;
     width: 50%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,UAAU;IACV,kBAAkB;IAClB,WAAW;IACX,UAAU;IACV,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,2BAA2B;IAC3B,uBAAuB;IACvB,2BAA2B;AAC/B;;AAEA;IACI,aAAa;IACb,2BAA2B;IAC3B,uBAAuB;IACvB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA,YAAY;;AAEZ;IACI,oBAAoB;IACpB,kCAAkC;IAClC,6BAA6B;IAC7B,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    align-content: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#home {\n    position: relative;\n}\n\n#home .button {\n    scale: 2.5;\n    position: absolute;\n    left: 100px;\n    top: -20px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    /* justify-items: center; */\n    justify-content: center;\n    /* align-content: center; */\n}\n\n#modules {\n    display: grid;\n    /* justify-items: center; */\n    justify-content: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n#modules p {\n    padding: 0 100px;\n    background-color: var(--softBlack);\n}\n\n/* #FOOTER */\n\n#footer {\n    display: inline-grid;\n    grid-template-columns: repeat(3, );\n    /* justify-content: center; */\n    padding: 20px;\n}\n\n#socials p {\n    display: flex;\n    gap: 20px;\n}\n\n#map {\n    height: 100%;\n    width: 50%;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,uCAAuC;IACvC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,2BAA2B;AAC/B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;;;;;;GAMG;;AAEH;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA,YAAY;;AAEZ;IACI,oBAAoB;IACpB,kCAAkC;IAClC,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: min-content 2fr 1fr;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    /* align-content: center; */\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n}\n\n/* #home .button {\n    scale: 2.5;\n    position: absolute;\n    left: 100px;\n    top: -20px;\n    border: 1px solid white;\n} */\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n#modules p {\n    padding: 0 100px;\n    background-color: var(--softBlack);\n}\n\n/* #FOOTER */\n\n#footer {\n    display: inline-grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    padding: 20px;\n    justify-items: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 20px;\n}\n\n#map {\n    height: 100%;\n    width: 50%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
