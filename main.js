@@ -188,7 +188,12 @@ body {
 #socials p {
     display: flex;
     gap: 20px;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,6BAA6B;IAC7B,uBAAuB;IACvB,yDAAqD;IACrD,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,mBAAmB;AACvB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,UAAU;IACV,kBAAkB;IAClB,WAAW;IACX,UAAU;IACV,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,SAAS;AACb","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    /* justify-content: center; */\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    align-items: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#home {\n    position: relative;\n}\n\n#home .button {\n    scale: 2.5;\n    position: absolute;\n    left: 100px;\n    top: -20px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n    justify-content: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: flex;\n    justify-content: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n#modules p {\n    padding: 0 100px;\n    background-color: var(--softBlack);\n}\n\n/* #FOOTER */\n\n#footer {\n    display: flex;\n    justify-content: space-between;\n}\n\n#socials p {\n    display: flex;\n    gap: 20px;\n}"],"sourceRoot":""}]);
+}
+
+#map {
+    height: 80%;
+    width: 30%;
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,+BAA+B;IAC/B,6BAA6B;IAC7B,uBAAuB;IACvB,yDAAqD;IACrD,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,mBAAmB;AACvB;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;AACtC;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,UAAU;IACV,kBAAkB;IAClB,WAAW;IACX,UAAU;IACV,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,WAAW;IACX,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 1fr 2fr 1fr;\n    /* justify-content: center; */\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    align-items: center;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n}\n\n#home {\n    position: relative;\n}\n\n#home .button {\n    scale: 2.5;\n    position: absolute;\n    left: 100px;\n    top: -20px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n    justify-content: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: flex;\n    justify-content: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n#modules p {\n    padding: 0 100px;\n    background-color: var(--softBlack);\n}\n\n/* #FOOTER */\n\n#footer {\n    display: flex;\n    justify-content: space-between;\n}\n\n#socials p {\n    display: flex;\n    gap: 20px;\n}\n\n#map {\n    height: 80%;\n    width: 30%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1048,6 +1053,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+  // Initialize and add the map
+let map;
+
+async function initMap() {
+  // The location of Uluru
+  const position = { lat: -25.344, lng: 131.031 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Uluru",
+  });
+}
+
+initMap();
 
 // ICONS
 let facebookLogo = new Image(30,30)
