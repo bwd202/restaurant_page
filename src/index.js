@@ -5,7 +5,7 @@ import facebook from './assets/facebook.svg'
 import yelp from './assets/yelp.svg'
 import bbb from './assets/bbb.svg'
 
-  // Initialize and add the map
+  // G MAP
 let map;
 
 async function initMap() {
