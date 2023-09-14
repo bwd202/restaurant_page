@@ -103,7 +103,7 @@ body {
     font-size: 1.5em;
 }
 
-/* CLASSES */
+/* Classes */
 
 .button {
     cursor: pointer;
@@ -115,6 +115,26 @@ body {
 
 .scaled {
     scale: 2.7;
+}
+
+/* Paragraphs */
+
+.txt-wrapper {
+    padding: 10px;
+    background-color: var(--softBlack);
+}
+
+/* Images */
+
+.img-wrapper:first-of-type {
+    float: right;
+    padding-right: 40px;
+}
+
+.img-wrapper:last-of-type {
+    float: left;
+    padding-left: 40px;
+    padding-right: 10px;
 }
 
 /* #HEADER */
@@ -175,23 +195,10 @@ body {
     margin: 100px;
 }
 
-#modules p {
+/* #modules p {
     padding: 10px;
     background-color: var(--softBlack);
-}
-
-/* Images */
-
-.img-wrapper:first-of-type {
-    float: right;
-    padding-right: 40px;
-}
-
-.img-wrapper:last-of-type {
-    float: left;
-    padding-left: 40px;
-    padding-right: 10px;
-}
+} */
 
 /* #FOOTER */
 
@@ -213,7 +220,7 @@ body {
 #map {
     margin: 15px;
     width: 60%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,2BAA2B;AAC/B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,yCAAyC;IACzC,aAAa;IACb,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,kCAAkC;AACtC;;AAEA,WAAW;;AAEX;IACI,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.7);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 100px 2fr 250px;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    /* align-content: center; */\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 50px;\n    margin: 100px;\n}\n\n#modules p {\n    padding: 10px;\n    background-color: var(--softBlack);\n}\n\n/* Images */\n\n.img-wrapper:first-of-type {\n    float: right;\n    padding-right: 40px;\n}\n\n.img-wrapper:last-of-type {\n    float: left;\n    padding-left: 40px;\n    padding-right: 10px;\n}\n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,eAAe;;AAEf;IACI,aAAa;IACb,kCAAkC;AACtC;;AAEA,WAAW;;AAEX;IACI,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,2BAA2B;AAC/B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,yCAAyC;IACzC,aAAa;IACb,aAAa;AACjB;;AAEA;;;GAGG;;AAEH,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.7);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 100px 2fr 250px;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* Classes */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* Paragraphs */\n\n.txt-wrapper {\n    padding: 10px;\n    background-color: var(--softBlack);\n}\n\n/* Images */\n\n.img-wrapper:first-of-type {\n    float: right;\n    padding-right: 40px;\n}\n\n.img-wrapper:last-of-type {\n    float: left;\n    padding-left: 40px;\n    padding-right: 10px;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    /* align-content: center; */\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 50px;\n    margin: 100px;\n}\n\n/* #modules p {\n    padding: 10px;\n    background-color: var(--softBlack);\n} */\n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1508,7 +1515,9 @@ function loadPage(event) {
     // console.log('test loadPage.js')
 
     let title = document.createElement('h2')
+
     let body = document.createElement('div')
+    body.classList.add('txt-wrapper')
 
     let imgWrapper1 = document.createElement('div')
     let imgWrapper2 = document.createElement('div')
