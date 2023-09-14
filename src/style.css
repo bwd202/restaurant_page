@@ -1,5 +1,5 @@
 :root {
-    --softBlack: rgba(0,0,0,0.5);
+    --softBlack: rgba(0,0,0,0.7);
 }
 
 * {
@@ -32,10 +32,6 @@ body {
 
 .scaled {
     scale: 2.7;
-}
-
-.float-right {
-    float: right;
 }
 
 /* #HEADER */
@@ -97,15 +93,20 @@ body {
 }
 
 #modules p {
-    padding: 10px 0 10px 200px;
+    /* padding: 10px 0 10px 200px; */
     background-color: var(--softBlack);
-    clear: left;
+    /* clear: left; */
 }
 
 /* Images */
 
-.img-wrapper {
-    padding-right: 100px;
+.img-wrapper:first-of-type {
+    float: right;
+    padding-right: 40px;
+}
+
+.img-wrapper:last-of-type {
+    float: left;
 }
 
 /* #FOOTER */

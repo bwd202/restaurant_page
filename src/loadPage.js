@@ -2,10 +2,10 @@ export {loadPage}
 import { aboutUs } from './aboutUs';
 import {menu} from './menu'
 import andy from './assets/andy-hay.jpg'
+import debbie from './assets/debbie-tea.jpg'
 
 // LOREM IPSUM
 import { LoremIpsum } from "lorem-ipsum";
-// const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
@@ -22,12 +22,14 @@ const lorem = new LoremIpsum({
 // lorem.generateParagraphs(7);
 // lorem.generateSentences(5)
 
-// MODULE
-
+// PICTURES
 let andyPic = new Image(400,400)
 andyPic.src = andy
-// andyPic.classList.add('float-right')
 
+let debbiePic = new Image(400, 400)
+debbiePic.src = debbie
+
+// MODULE
 function loadPage(event) {
 
     // console.log('test loadPage.js')
@@ -37,7 +39,7 @@ function loadPage(event) {
     let imgWrapper = document.createElement('div')
     let container = document.querySelector('#modules')
 
-    imgWrapper.classList.add('img-wrapper', 'float-right')
+    imgWrapper.classList.add('img-wrapper')
 
     if(container.hasChildNodes()) {
 
