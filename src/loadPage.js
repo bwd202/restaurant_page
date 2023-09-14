@@ -35,7 +35,9 @@ function loadPage(event) {
     // console.log('test loadPage.js')
 
     let title = document.createElement('h2')
+
     let body = document.createElement('div')
+    body.classList.add('txt-wrapper')
 
     let imgWrapper1 = document.createElement('div')
     let imgWrapper2 = document.createElement('div')

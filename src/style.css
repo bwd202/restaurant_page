@@ -20,7 +20,7 @@ body {
     font-size: 1.5em;
 }
 
-/* CLASSES */
+/* Classes */
 
 .button {
     cursor: pointer;
@@ -32,6 +32,26 @@ body {
 
 .scaled {
     scale: 2.7;
+}
+
+/* Paragraphs */
+
+.txt-wrapper {
+    padding: 10px;
+    background-color: var(--softBlack);
+}
+
+/* Images */
+
+.img-wrapper:first-of-type {
+    float: right;
+    padding-right: 40px;
+}
+
+.img-wrapper:last-of-type {
+    float: left;
+    padding-left: 40px;
+    padding-right: 10px;
 }
 
 /* #HEADER */
@@ -92,23 +112,10 @@ body {
     margin: 100px;
 }
 
-#modules p {
+/* #modules p {
     padding: 10px;
     background-color: var(--softBlack);
-}
-
-/* Images */
-
-.img-wrapper:first-of-type {
-    float: right;
-    padding-right: 40px;
-}
-
-.img-wrapper:last-of-type {
-    float: left;
-    padding-left: 40px;
-    padding-right: 10px;
-}
+} */
 
 /* #FOOTER */
 
