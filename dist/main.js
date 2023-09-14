@@ -117,6 +117,10 @@ body {
     scale: 2.7;
 }
 
+.float-right {
+    float: right;
+}
+
 /* #HEADER */
 
 #header, #footer {
@@ -166,17 +170,25 @@ body {
 
 #modules {
     display: grid;
+    gap: 40px;
     justify-items: center;
-    width: 85%;
-    height: 80%;
+    width: 80%;
+    /* height: 80%; */
     background-color: rgba(255, 217, 0, 0.25);
-    padding: 30px;
-    margin: 50px;
+    padding: 50px;
+    margin: 100px;
 }
 
 #modules p {
-    padding: 0 100px;
+    padding: 10px 0 10px 200px;
     background-color: var(--softBlack);
+    clear: left;
+}
+
+/* Images */
+
+.img-wrapper {
+    padding-right: 100px;
 }
 
 /* #FOOTER */
@@ -199,7 +211,7 @@ body {
 #map {
     margin: 15px;
     width: 60%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,2BAA2B;AAC/B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,qBAAqB;IACrB,UAAU;IACV,WAAW;IACX,yCAAyC;IACzC,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 100px 2fr 250px;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    /* align-content: center; */\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    justify-items: center;\n    width: 85%;\n    height: 80%;\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 30px;\n    margin: 50px;\n}\n\n#modules p {\n    padding: 0 100px;\n    background-color: var(--softBlack);\n}\n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;AAChC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,YAAY;AAChB;;AAEA,YAAY;;AAEZ;IACI,kCAAkC;IAClC,2BAA2B;AAC/B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,yCAAyC;IACzC,aAAa;IACb,aAAa;AACjB;;AAEA;IACI,0BAA0B;IAC1B,kCAAkC;IAClC,WAAW;AACf;;AAEA,WAAW;;AAEX;IACI,oBAAoB;AACxB;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.5);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 100px 2fr 250px;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* CLASSES */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n.float-right {\n    float: right;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: var(--softBlack);\n    /* align-content: center; */\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 50px;\n    margin: 100px;\n}\n\n#modules p {\n    padding: 10px 0 10px 200px;\n    background-color: var(--softBlack);\n    clear: left;\n}\n\n/* Images */\n\n.img-wrapper {\n    padding-right: 100px;\n}\n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1436,7 +1448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let aboutUs = {
-    title: 'About Us',
+    title: 'ABOUT US',
     content: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
 }
 
@@ -1484,16 +1496,18 @@ const lorem = new lorem_ipsum__WEBPACK_IMPORTED_MODULE_3__.LoremIpsum({
 
 let andyPic = new Image(400,400)
 andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_2__
+// andyPic.classList.add('float-right')
 
 function loadPage(event) {
 
-    console.log('test loadPage.js')
+    // console.log('test loadPage.js')
 
     let title = document.createElement('h2')
-
     let body = document.createElement('div')
-
+    let imgWrapper = document.createElement('div')
     let container = document.querySelector('#modules')
+
+    imgWrapper.classList.add('img-wrapper', 'float-right')
 
     if(container.hasChildNodes()) {
 
@@ -1505,9 +1519,16 @@ function loadPage(event) {
     if(module === 'About Us') {
 
         title.innerHTML = _aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs.title
+
         body.insertAdjacentHTML('afterbegin', _aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs.content)
-        body.insertAdjacentElement('beforeend', andyPic)
-        body.insertAdjacentHTML('beforeend', lorem.generateParagraphs(1) )
+
+        body.insertAdjacentElement('beforeend', imgWrapper)
+
+        imgWrapper.insertAdjacentElement('beforeend', andyPic)
+
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
         container.append(title, body)
 

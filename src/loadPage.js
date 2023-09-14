@@ -26,16 +26,18 @@ const lorem = new LoremIpsum({
 
 let andyPic = new Image(400,400)
 andyPic.src = andy
+// andyPic.classList.add('float-right')
 
 function loadPage(event) {
 
-    console.log('test loadPage.js')
+    // console.log('test loadPage.js')
 
     let title = document.createElement('h2')
-
     let body = document.createElement('div')
-
+    let imgWrapper = document.createElement('div')
     let container = document.querySelector('#modules')
+
+    imgWrapper.classList.add('img-wrapper', 'float-right')
 
     if(container.hasChildNodes()) {
 
@@ -47,9 +49,16 @@ function loadPage(event) {
     if(module === 'About Us') {
 
         title.innerHTML = aboutUs.title
+
         body.insertAdjacentHTML('afterbegin', aboutUs.content)
-        body.insertAdjacentElement('beforeend', andyPic)
-        body.insertAdjacentHTML('beforeend', lorem.generateParagraphs(1) )
+
+        body.insertAdjacentElement('beforeend', imgWrapper)
+
+        imgWrapper.insertAdjacentElement('beforeend', andyPic)
+
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
         container.append(title, body)
 
