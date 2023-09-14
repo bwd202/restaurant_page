@@ -505,23 +505,6 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/index.html":
-/*!************************!*\
-  !*** ./src/index.html ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-// Module
-var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>PAGODA</title>\n    <!-- <" + "script src=\"main.js\" type=\"module\"><" + "/script> -->\n</head>\n<body>\n    <div id=\"header\">\n        <div id='home'>\n            <p class=\"button\">&#128724;</p>\n        </div>\n        <div id=\"title\">\n            <h1>pagoda</h1>\n        </div>\n        <div id=\"navbar\">\n            <p class=\"button\">Menu</p>\n            <p class=\"button\">About Us</p>\n        </div>\n    </div>\n    <div id=\"content\">\n        <div id=\"modules\"></div>\n    </div>\n    <div id=\"footer\">\n        <div id=\"socials\"><p class=\"flex\"></p></div>\n        <div id=\"address\"><small>101 Genghis Avenue<br>Ulan Bator, Mongolia 11235</small></div>\n        <div id=\"map\">map</div>\n    </div>\n    <" + "script>// GOOGLE MAP\n\n        (g=>{var h,a,k,p=\"The Google Maps JavaScript API\",c=\"google\",l=\"importLibrary\",q=\"__ib__\",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement(\"script\"));e.set(\"libraries\",[...r]+\"\");for(k in g)e.set(k.replace(/[A-Z]/g,t=>\"_\"+t[0].toLowerCase()),g[k]);e.set(\"callback\",c+\".maps.\"+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+\" could not load.\"));a.nonce=m.querySelector(\"script[nonce]\")?.nonce||\"\";m.head.append(a)}));d[l]?console.warn(p+\" only loads once. Ignoring:\",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({\n            key: \"AIzaSyAP1fPfx8cYWs6JxPoXDqwQ3psZD4stS1I\",\n            v: \"weekly\",\n            // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).\n            // Add other bootstrap parameters as needed, using camel case.\n          });\n          <" + "/script>\n</body>\n</html>";
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
-
-/***/ }),
-
 /***/ "./node_modules/lorem-ipsum/dist/constants/formats.js":
 /*!************************************************************!*\
   !*** ./node_modules/lorem-ipsum/dist/constants/formats.js ***!
@@ -2168,14 +2151,13 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/index.html");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _fontsource_urbanist__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/urbanist */ "./node_modules/@fontsource/urbanist/index.css");
-/* harmony import */ var _fontsource_noto_serif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fontsource/noto-serif */ "./node_modules/@fontsource/noto-serif/index.css");
-/* harmony import */ var _loadPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./loadPage */ "./src/loadPage.js");
-/* harmony import */ var _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/facebook.svg */ "./src/assets/facebook.svg");
-/* harmony import */ var _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/yelp.svg */ "./src/assets/yelp.svg");
-/* harmony import */ var _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/bbb.svg */ "./src/assets/bbb.svg");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _fontsource_urbanist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fontsource/urbanist */ "./node_modules/@fontsource/urbanist/index.css");
+/* harmony import */ var _fontsource_noto_serif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/noto-serif */ "./node_modules/@fontsource/noto-serif/index.css");
+/* harmony import */ var _loadPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loadPage */ "./src/loadPage.js");
+/* harmony import */ var _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/facebook.svg */ "./src/assets/facebook.svg");
+/* harmony import */ var _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/yelp.svg */ "./src/assets/yelp.svg");
+/* harmony import */ var _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/bbb.svg */ "./src/assets/bbb.svg");
 
 
 
@@ -2183,9 +2165,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-// document.write(html)
 
   // G MAP
 let map;
@@ -2220,9 +2199,9 @@ let facebookLogo = new Image(30,30)
 let yelpLogo = new Image(30, 30)
 let bbbLogo = new Image(30,30)
 
-facebookLogo.src = _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_5__
-yelpLogo.src = _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_6__
-bbbLogo.src = _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_7__
+facebookLogo.src = _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_4__
+yelpLogo.src = _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_5__
+bbbLogo.src = _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_6__
 
 facebookLogo.classList.add('icon')
 yelpLogo.classList.add('icon')
@@ -2234,8 +2213,8 @@ document.querySelector('#socials p').append(facebookLogo, yelpLogo, bbbLogo)
 let aboutBtn = document.querySelector('#navbar :last-child')
 let menuBtn = document.querySelector('#navbar :first-child')
 
-aboutBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_4__.loadPage)
-menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_4__.loadPage)
+aboutBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
+menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
 })();
 
 /******/ })()
