@@ -1,5 +1,5 @@
 :root {
-    --softBlack: rgba(0,0,0,0.7);
+    --softBlack: rgba(0,0,0,0.75);
 }
 
 * {
@@ -37,7 +37,7 @@ body {
 /* Paragraphs */
 
 .txt-wrapper {
-    padding: 10px;
+    padding: 30px;
     background-color: var(--softBlack);
 }
 
@@ -45,20 +45,18 @@ body {
 
 .img-wrapper:first-of-type {
     float: right;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 
 .img-wrapper:last-of-type {
     float: left;
-    padding-left: 40px;
     padding-right: 10px;
 }
 
 /* #HEADER */
 
 #header, #footer {
-    background-color: var(--softBlack);
-    /* align-content: center; */
+    background-color: black;
 }
 
 #header {
@@ -112,10 +110,11 @@ body {
     margin: 100px;
 }
 
-/* #modules p {
-    padding: 10px;
-    background-color: var(--softBlack);
-} */
+#modules p { 
+    margin-bottom: 10px;
+    font-family: 'Noto Serif';
+    font-weight: 100;
+} 
 
 /* #FOOTER */
 
