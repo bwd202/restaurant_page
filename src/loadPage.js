@@ -10,6 +10,8 @@ function loadPage(event) {
 
     let body = document.createElement('p')
 
+    let imgDiv = document.createElement('div')
+
     let container = document.querySelector('#modules')
 
     if(container.hasChildNodes()) {
@@ -23,6 +25,7 @@ function loadPage(event) {
 
         title.innerHTML = aboutUs.title
         body.innerHTML = aboutUs.content
+        imgDiv.append(aboutUs.picture)
 
     } else if (module === 'Menu') {
 
@@ -30,5 +33,5 @@ function loadPage(event) {
         body.innerHTML = menu.content
     }
 
-    container.append(title, body)
+    container.append(title, body, imgDiv)
 }
