@@ -11,14 +11,15 @@ module.exports = {
         clean: true,
     },
     plugins: [new HtmlWebpackPlugin({
-        title: '&#128724; PAGODA | Fusion Restaurant'
+        title: '&#128724; PAGODA | Fusion Restaurant',
+        template: './src/index.html'
     })],
     module: {
         rules: [
-            {
-                test: /\.html$/i,
-                loader: "html-loader",
-              },
+            // {
+            //     test: /\.html$/i,
+            //     loader: "html-loader",
+            //   },
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader']

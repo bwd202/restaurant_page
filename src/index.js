@@ -1,4 +1,3 @@
-import html from './index.html'
 import './style.css'
 import "@fontsource/urbanist"
 import "@fontsource/noto-serif"
@@ -6,8 +5,6 @@ import {loadPage} from './loadPage'
 import facebook from './assets/facebook.svg'
 import yelp from './assets/yelp.svg'
 import bbb from './assets/bbb.svg'
-
-// document.write(html)
 
   // G MAP
 let map;
