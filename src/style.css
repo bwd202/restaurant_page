@@ -93,9 +93,8 @@ body {
 }
 
 #modules p {
-    /* padding: 10px 0 10px 200px; */
+    padding: 10px;
     background-color: var(--softBlack);
-    /* clear: left; */
 }
 
 /* Images */
@@ -107,6 +106,8 @@ body {
 
 .img-wrapper:last-of-type {
     float: left;
+    padding-left: 40px;
+    padding-right: 10px;
 }
 
 /* #FOOTER */

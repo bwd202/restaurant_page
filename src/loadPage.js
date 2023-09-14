@@ -36,10 +36,15 @@ function loadPage(event) {
 
     let title = document.createElement('h2')
     let body = document.createElement('div')
-    let imgWrapper = document.createElement('div')
+
+    let imgWrapper1 = document.createElement('div')
+    let imgWrapper2 = document.createElement('div')
+
+    imgWrapper1.classList.add('img-wrapper')
+    imgWrapper2.classList.add('img-wrapper')
+
     let container = document.querySelector('#modules')
 
-    imgWrapper.classList.add('img-wrapper')
 
     if(container.hasChildNodes()) {
 
@@ -54,11 +59,17 @@ function loadPage(event) {
 
         body.insertAdjacentHTML('afterbegin', aboutUs.content)
 
-        body.insertAdjacentElement('beforeend', imgWrapper)
+        body.insertAdjacentElement('beforeend', imgWrapper1)
 
-        imgWrapper.insertAdjacentElement('beforeend', andyPic)
+        imgWrapper1.insertAdjacentElement('beforeend', andyPic)
 
         body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+
+        body.insertAdjacentElement('beforeend', imgWrapper2)
+        imgWrapper2.insertAdjacentElement('afterbegin', debbiePic)
+
         body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
         body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
