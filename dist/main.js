@@ -1665,8 +1665,12 @@ function loadPage(event) {
 
     } else if (module === 'Menu') {
 
-        title.innerHTML = menu.title
-        body.innerHTML = menu.content
+        // let menu = menuLoader()
+
+        // console.log(menu)
+
+        title.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.title
+        body.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.content
 
         container.append(title, body)
     }
@@ -1683,13 +1687,13 @@ function loadPage(event) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   menuLoader: () => (/* binding */ menuLoader)
+/* harmony export */   menu: () => (/* binding */ menu)
 /* harmony export */ });
 
 
-function menuLoader(x) {
-    return {x}
-}
+// function menuLoader() {
+//     return {menu}
+// }
 
 let menu = {
     title: 'Menu',

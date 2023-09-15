@@ -1,6 +1,6 @@
 export {loadPage}
 import { aboutUs } from './aboutUs';
-import {menuLoader} from './menu'
+import {menu} from './menu'
 import andy from './assets/andy-hay.jpg'
 import debbie from './assets/debbie-tea.jpg'
 
@@ -83,8 +83,12 @@ function loadPage(event) {
 
     } else if (module === 'Menu') {
 
-        title.innerHTML = menu.title
-        body.innerHTML = menu.content
+        // let menu = menuLoader()
+
+        // console.log(menu)
+
+        title.textContent = menu.title
+        body.textContent = menu.content
 
         container.append(title, body)
     }

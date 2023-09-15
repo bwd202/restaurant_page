@@ -1,8 +1,8 @@
-export {menuLoader}
+export {menu}
 
-function menuLoader(x) {
-    return {x}
-}
+// function menuLoader() {
+//     return {menu}
+// }
 
 let menu = {
     title: 'Menu',
