@@ -16,8 +16,7 @@ body {
     background-color: black;
     background-image: url(./assets/pagoda-background.jpg);
     background-repeat: no-repeat;
-    font-family: 'urbanist';
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 
 /* Classes */
@@ -32,6 +31,11 @@ body {
 
 .scaled {
     scale: 2.7;
+}
+
+.title-font {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
 }
 
 /* Paragraphs */
@@ -105,15 +109,14 @@ body {
     justify-items: center;
     width: 80%;
     /* height: 80%; */
-    background-color: rgba(255, 217, 0, 0.25);
+    background-color: rgba(255, 217, 0, 0.2);
     padding: 50px;
     margin: 100px;
 }
 
 #modules p { 
     margin-bottom: 10px;
-    font-family: 'Noto Serif';
-    font-weight: 100;
+    font-family: 'Noto Serif', serif;
 } 
 
 /* #FOOTER */

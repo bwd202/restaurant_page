@@ -4,6 +4,10 @@ import {menu} from './menu'
 import andy from './assets/andy-hay.jpg'
 import debbie from './assets/debbie-tea.jpg'
 
+// TEMPLATE
+
+document.querySelector('#title h1').classList.add('title-font')
+
 // LOREM IPSUM
 import { LoremIpsum } from "lorem-ipsum";
 
@@ -35,6 +39,7 @@ function loadPage(event) {
     // console.log('test loadPage.js')
 
     let title = document.createElement('h2')
+    title.classList.add('title-font')
 
     let body = document.createElement('div')
     body.classList.add('txt-wrapper')

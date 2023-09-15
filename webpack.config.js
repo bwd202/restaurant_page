@@ -16,10 +16,7 @@ module.exports = {
     })],
     module: {
         rules: [
-            // {
-            //     test: /\.html$/i,
-            //     loader: "html-loader",
-            //   },
+    
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader']
@@ -32,6 +29,7 @@ module.exports = {
 
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
+                // use: ['file-loader']
         
               },
         ]
