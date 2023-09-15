@@ -30,7 +30,7 @@ let debbiePic = new Image(400, 400)
 debbiePic.src = debbie
 
 // html loading module
-function loadPage(event) {
+function loadPage(event = 'default') {
 
     // console.log('test loadPage.js')
 
@@ -48,14 +48,20 @@ function loadPage(event) {
 
     let container = document.querySelector('#modules')
 
+    // default
+    if(event === 'default')
+    title.textContent = menu.title
+    body.textContent = menu.content
+
+    container.append(title, body)
+
+    // let cond = 'default'
+
 
     if(container.hasChildNodes()) {
 
         container.innerHTML = ''
     }
-
-    // default
-
 
     let module = event.target.textContent
 

@@ -1612,7 +1612,7 @@ let debbiePic = new Image(400, 400)
 debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_3__
 
 // html loading module
-function loadPage(event) {
+function loadPage(event = 'default') {
 
     // console.log('test loadPage.js')
 
@@ -1630,14 +1630,20 @@ function loadPage(event) {
 
     let container = document.querySelector('#modules')
 
+    // default
+    if(event === 'default')
+    title.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.title
+    body.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.content
+
+    container.append(title, body)
+
+    // let cond = 'default'
+
 
     if(container.hasChildNodes()) {
 
         container.innerHTML = ''
     }
-
-    // default
-
 
     let module = event.target.textContent
 
@@ -1977,6 +1983,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import {menu} from './menu'
 
 
 
@@ -2021,7 +2028,15 @@ menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPag
 
 // #CONTENT
 
-document.querySelector('#modules').insertAdjacentElement
+// document.querySelector('body').addEventListener('load', loadPage)
+
+// document.querySelector('#modules').insertAdjacentElement
+
+// let content = new DocumentFragment()
+
+// content.append(menu.title, menu.content)
+
+// document.onload(document.write(content))
 
 // #FOOTER
 let facebookLogo = new Image(30,30)

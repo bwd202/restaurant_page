@@ -2,6 +2,7 @@ import './style.css'
 import "@fontsource/urbanist/300.css"
 import "@fontsource/noto-serif/latin-400.css"
 import {loadPage} from './loadPage'
+// import {menu} from './menu'
 import facebook from './assets/facebook.svg'
 import yelp from './assets/yelp.svg'
 import bbb from './assets/bbb.svg'
@@ -46,7 +47,15 @@ menuBtn.addEventListener('click', loadPage)
 
 // #CONTENT
 
-document.querySelector('#modules').insertAdjacentElement
+// document.querySelector('body').addEventListener('load', loadPage)
+
+// document.querySelector('#modules').insertAdjacentElement
+
+// let content = new DocumentFragment()
+
+// content.append(menu.title, menu.content)
+
+// document.onload(document.write(content))
 
 // #FOOTER
 let facebookLogo = new Image(30,30)
