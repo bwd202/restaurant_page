@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/noto-serif/index.css":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/noto-serif/index.css ***!
-  \*********************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/noto-serif/latin-400.css":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/noto-serif/latin-400.css ***!
+  \*************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -22,115 +22,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-cyrillic-ext-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-ext-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-cyrillic-ext-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-ext-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-cyrillic-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-cyrillic-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-greek-ext-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-ext-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-greek-ext-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-ext-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-greek-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-greek-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-vietnamese-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-vietnamese-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-vietnamese-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-vietnamese-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-latin-ext-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-latin-ext-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-latin-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-latin-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-latin-400-normal.woff2 */ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff2"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./files/noto-serif-latin-400-normal.woff */ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
-var ___CSS_LOADER_URL_REPLACEMENT_3___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
-var ___CSS_LOADER_URL_REPLACEMENT_4___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
-var ___CSS_LOADER_URL_REPLACEMENT_5___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_5___);
-var ___CSS_LOADER_URL_REPLACEMENT_6___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_6___);
-var ___CSS_LOADER_URL_REPLACEMENT_7___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_7___);
-var ___CSS_LOADER_URL_REPLACEMENT_8___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_8___);
-var ___CSS_LOADER_URL_REPLACEMENT_9___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_9___);
-var ___CSS_LOADER_URL_REPLACEMENT_10___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_10___);
-var ___CSS_LOADER_URL_REPLACEMENT_11___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
-var ___CSS_LOADER_URL_REPLACEMENT_12___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
-var ___CSS_LOADER_URL_REPLACEMENT_13___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_13___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* noto-serif-cyrillic-ext-400-normal */
+___CSS_LOADER_EXPORT___.push([module.id, `/* noto-serif-latin-400-normal */
 @font-face {
   font-family: 'Noto Serif';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format('woff');
-  unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
-}
-
-/* noto-serif-cyrillic-400-normal */
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_3___}) format('woff');
-  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
-}
-
-/* noto-serif-greek-ext-400-normal */
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_4___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_5___}) format('woff');
-  unicode-range: U+1F00-1FFF;
-}
-
-/* noto-serif-greek-400-normal */
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_6___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_7___}) format('woff');
-  unicode-range: U+0370-03FF;
-}
-
-/* noto-serif-vietnamese-400-normal */
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_8___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_9___}) format('woff');
-  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;
-}
-
-/* noto-serif-latin-ext-400-normal */
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_10___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_11___}) format('woff');
-  unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
-}
-
-/* noto-serif-latin-400-normal */
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_12___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_13___}) format('woff');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}`, "",{"version":3,"sources":["webpack://./node_modules/@fontsource/noto-serif/index.css"],"names":[],"mappings":"AAAA,uCAAuC;AACvC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAA+I;EAC/I,iFAAiF;AACnF;;AAEA,mCAAmC;AACnC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAAuI;EACvI,gEAAgE;AAClE;;AAEA,oCAAoC;AACpC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAAyI;EACzI,0BAA0B;AAC5B;;AAEA,gCAAgC;AAChC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAAiI;EACjI,0BAA0B;AAC5B;;AAEA,qCAAqC;AACrC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAA2I;EAC3I,2JAA2J;AAC7J;;AAEA,oCAAoC;AACpC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,sHAAyI;EACzI,qIAAqI;AACvI;;AAEA,gCAAgC;AAChC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,sHAAiI;EACjI,8KAA8K;AAChL","sourcesContent":["/* noto-serif-cyrillic-ext-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-cyrillic-ext-400-normal.woff2) format('woff2'), url(./files/noto-serif-cyrillic-ext-400-normal.woff) format('woff');\n  unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;\n}\n\n/* noto-serif-cyrillic-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-cyrillic-400-normal.woff2) format('woff2'), url(./files/noto-serif-cyrillic-400-normal.woff) format('woff');\n  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;\n}\n\n/* noto-serif-greek-ext-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-greek-ext-400-normal.woff2) format('woff2'), url(./files/noto-serif-greek-ext-400-normal.woff) format('woff');\n  unicode-range: U+1F00-1FFF;\n}\n\n/* noto-serif-greek-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-greek-400-normal.woff2) format('woff2'), url(./files/noto-serif-greek-400-normal.woff) format('woff');\n  unicode-range: U+0370-03FF;\n}\n\n/* noto-serif-vietnamese-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-vietnamese-400-normal.woff2) format('woff2'), url(./files/noto-serif-vietnamese-400-normal.woff) format('woff');\n  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;\n}\n\n/* noto-serif-latin-ext-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-latin-ext-400-normal.woff2) format('woff2'), url(./files/noto-serif-latin-ext-400-normal.woff) format('woff');\n  unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;\n}\n\n/* noto-serif-latin-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-latin-400-normal.woff2) format('woff2'), url(./files/noto-serif-latin-400-normal.woff) format('woff');\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./node_modules/@fontsource/noto-serif/latin-400.css"],"names":[],"mappings":"AAAA,gCAAgC;AAChC;EACE,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAAiI;AACnI","sourcesContent":["/* noto-serif-latin-400-normal */\n@font-face {\n  font-family: 'Noto Serif';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/noto-serif-latin-400-normal.woff2) format('woff2'), url(./files/noto-serif-latin-400-normal.woff) format('woff');\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/urbanist/index.css":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/urbanist/index.css ***!
-  \*******************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/urbanist/300.css":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/urbanist/300.css ***!
+  \*****************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -147,35 +62,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-ext-400-normal.woff2 */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-ext-400-normal.woff */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-400-normal.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-400-normal.woff2 */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff2"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-400-normal.woff */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-ext-300-normal.woff2 */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-300-normal.woff2"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-ext-300-normal.woff */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-300-normal.woff"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-300-normal.woff2 */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff2"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./files/urbanist-latin-300-normal.woff */ "./node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* urbanist-latin-ext-400-normal */
+___CSS_LOADER_EXPORT___.push([module.id, `/* urbanist-latin-ext-300-normal */
 @font-face {
   font-family: 'Urbanist';
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
+  font-weight: 300;
   src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format('woff');
   unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
 }
 
-/* urbanist-latin-400-normal */
+/* urbanist-latin-300-normal */
 @font-face {
   font-family: 'Urbanist';
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
+  font-weight: 300;
   src: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) format('woff2'), url(${___CSS_LOADER_URL_REPLACEMENT_3___}) format('woff');
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}`, "",{"version":3,"sources":["webpack://./node_modules/@fontsource/urbanist/index.css"],"names":[],"mappings":"AAAA,kCAAkC;AAClC;EACE,uBAAuB;EACvB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAAqI;EACrI,qIAAqI;AACvI;;AAEA,8BAA8B;AAC9B;EACE,uBAAuB;EACvB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAA6H;EAC7H,8KAA8K;AAChL","sourcesContent":["/* urbanist-latin-ext-400-normal */\n@font-face {\n  font-family: 'Urbanist';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/urbanist-latin-ext-400-normal.woff2) format('woff2'), url(./files/urbanist-latin-ext-400-normal.woff) format('woff');\n  unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;\n}\n\n/* urbanist-latin-400-normal */\n@font-face {\n  font-family: 'Urbanist';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src: url(./files/urbanist-latin-400-normal.woff2) format('woff2'), url(./files/urbanist-latin-400-normal.woff) format('woff');\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./node_modules/@fontsource/urbanist/300.css"],"names":[],"mappings":"AAAA,kCAAkC;AAClC;EACE,uBAAuB;EACvB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAAqI;EACrI,qIAAqI;AACvI;;AAEA,8BAA8B;AAC9B;EACE,uBAAuB;EACvB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,oHAA6H;EAC7H,8KAA8K;AAChL","sourcesContent":["/* urbanist-latin-ext-300-normal */\n@font-face {\n  font-family: 'Urbanist';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 300;\n  src: url(./files/urbanist-latin-ext-300-normal.woff2) format('woff2'), url(./files/urbanist-latin-ext-300-normal.woff) format('woff');\n  unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;\n}\n\n/* urbanist-latin-300-normal */\n@font-face {\n  font-family: 'Urbanist';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 300;\n  src: url(./files/urbanist-latin-300-normal.woff2) format('woff2'), url(./files/urbanist-latin-300-normal.woff) format('woff');\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -224,8 +139,7 @@ body {
     background-color: black;
     background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
     background-repeat: no-repeat;
-    font-family: 'urbanist';
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 
 /* Classes */
@@ -240,6 +154,11 @@ body {
 
 .scaled {
     scale: 2.7;
+}
+
+.title-font {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
 }
 
 /* Paragraphs */
@@ -313,15 +232,14 @@ body {
     justify-items: center;
     width: 80%;
     /* height: 80%; */
-    background-color: rgba(255, 217, 0, 0.25);
+    background-color: rgba(255, 217, 0, 0.2);
     padding: 50px;
     margin: 100px;
 }
 
 #modules p { 
     margin-bottom: 10px;
-    font-family: 'Noto Serif';
-    font-weight: 100;
+    font-family: 'Noto Serif', serif;
 } 
 
 /* #FOOTER */
@@ -344,7 +262,7 @@ body {
 #map {
     margin: 15px;
     width: 60%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,6BAA6B;AACjC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA,eAAe;;AAEf;IACI,aAAa;IACb,kCAAkC;AACtC;;AAEA,WAAW;;AAEX;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,mBAAmB;AACvB;;AAEA,YAAY;;AAEZ;IACI,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,yCAAyC;IACzC,aAAa;IACb,aAAa;AACjB;;AAEA;IACI,mBAAmB;IACnB,yBAAyB;IACzB,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.75);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 100px 2fr 250px;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    font-family: 'urbanist';\n    font-size: 1.5em;\n}\n\n/* Classes */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n/* Paragraphs */\n\n.txt-wrapper {\n    padding: 30px;\n    background-color: var(--softBlack);\n}\n\n/* Images */\n\n.img-wrapper:first-of-type {\n    float: right;\n    /* padding-right: 40px; */\n}\n\n.img-wrapper:last-of-type {\n    float: left;\n    padding-right: 10px;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: black;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.25);\n    padding: 50px;\n    margin: 100px;\n}\n\n#modules p { \n    margin-bottom: 10px;\n    font-family: 'Noto Serif';\n    font-weight: 100;\n} \n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,6BAA6B;AACjC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,uBAAuB;IACvB,yDAAqD;IACrD,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,mCAAmC;IACnC,gBAAgB;AACpB;;AAEA,eAAe;;AAEf;IACI,aAAa;IACb,kCAAkC;AACtC;;AAEA,WAAW;;AAEX;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,mBAAmB;AACvB;;AAEA,YAAY;;AAEZ;IACI,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,wCAAwC;IACxC,aAAa;IACb,aAAa;AACjB;;AAEA;IACI,mBAAmB;IACnB,gCAAgC;AACpC;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.75);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 100px 2fr 250px;\n    background-color: black;\n    background-image: url(./assets/pagoda-background.jpg);\n    background-repeat: no-repeat;\n    /* font-size: 1.5em; */\n}\n\n/* Classes */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n.title-font {\n    font-family: 'Urbanist', sans-serif;\n    font-weight: 300;\n}\n\n/* Paragraphs */\n\n.txt-wrapper {\n    padding: 30px;\n    background-color: var(--softBlack);\n}\n\n/* Images */\n\n.img-wrapper:first-of-type {\n    float: right;\n    /* padding-right: 40px; */\n}\n\n.img-wrapper:last-of-type {\n    float: left;\n    padding-right: 10px;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: black;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.2);\n    padding: 50px;\n    margin: 100px;\n}\n\n#modules p { \n    margin-bottom: 10px;\n    font-family: 'Noto Serif', serif;\n} \n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1193,10 +1111,10 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/noto-serif/index.css":
-/*!*******************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/index.css ***!
-  \*******************************************************/
+/***/ "./node_modules/@fontsource/noto-serif/latin-400.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/@fontsource/noto-serif/latin-400.css ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1215,7 +1133,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/noto-serif/index.css");
+/* harmony import */ var _css_loader_dist_cjs_js_latin_400_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js!./latin-400.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/noto-serif/latin-400.css");
 
       
       
@@ -1237,20 +1155,20 @@ options.setAttributes = (_style_loader_dist_runtime_setAttributesWithoutAttribut
 options.domAPI = (_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_latin_400_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_latin_400_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_latin_400_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_latin_400_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/urbanist/index.css":
-/*!*****************************************************!*\
-  !*** ./node_modules/@fontsource/urbanist/index.css ***!
-  \*****************************************************/
+/***/ "./node_modules/@fontsource/urbanist/300.css":
+/*!***************************************************!*\
+  !*** ./node_modules/@fontsource/urbanist/300.css ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1269,7 +1187,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/urbanist/index.css");
+/* harmony import */ var _css_loader_dist_cjs_js_300_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js!./300.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/urbanist/300.css");
 
       
       
@@ -1291,12 +1209,12 @@ options.setAttributes = (_style_loader_dist_runtime_setAttributesWithoutAttribut
 options.domAPI = (_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_300_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_300_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_300_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_300_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -1662,8 +1580,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// LOREM IPSUM
+// TEMPLATE
 
+document.querySelector('#title h1').classList.add('title-font')
+
+// LOREM IPSUM
+;
 
 const lorem = new lorem_ipsum__WEBPACK_IMPORTED_MODULE_4__.LoremIpsum({
   sentencesPerParagraph: {
@@ -1693,6 +1615,7 @@ function loadPage(event) {
     // console.log('test loadPage.js')
 
     let title = document.createElement('h2')
+    title.classList.add('title-font')
 
     let body = document.createElement('div')
     body.classList.add('txt-wrapper')
@@ -1767,86 +1690,6 @@ let menu = {
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-400-normal.woff":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-400-normal.woff ***!
-  \***************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "a8503e176fac307ce058.woff";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-400-normal.woff2":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-400-normal.woff2 ***!
-  \****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "4265eb9a3b24f1c5e073.woff2";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-ext-400-normal.woff":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-ext-400-normal.woff ***!
-  \*******************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "4afee8a9ee16d0c8eb41.woff";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-ext-400-normal.woff2":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-cyrillic-ext-400-normal.woff2 ***!
-  \********************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "faba82868e76e328c570.woff2";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-400-normal.woff":
-/*!************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-greek-400-normal.woff ***!
-  \************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "4167466b90568e5fd70a.woff";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-400-normal.woff2":
-/*!*************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-greek-400-normal.woff2 ***!
-  \*************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "76ea5bbef3ba464bfa95.woff2";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-ext-400-normal.woff":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-greek-ext-400-normal.woff ***!
-  \****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "bbbdd86955637f4e5329.woff";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-greek-ext-400-normal.woff2":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-greek-ext-400-normal.woff2 ***!
-  \*****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "0904a6c58c453e6659a5.woff2";
-
-/***/ }),
-
 /***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff":
 /*!************************************************************************************!*\
   !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff ***!
@@ -1867,83 +1710,43 @@ module.exports = __webpack_require__.p + "fa121838eab786ac4da5.woff2";
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff ***!
-  \****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "997c1075e655efa962d2.woff";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff2":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff2 ***!
-  \*****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "488244f9caa797c9e143.woff2";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-vietnamese-400-normal.woff":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-vietnamese-400-normal.woff ***!
-  \*****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "f1a9bdf1d84ae4e91856.woff";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/noto-serif/files/noto-serif-vietnamese-400-normal.woff2":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/@fontsource/noto-serif/files/noto-serif-vietnamese-400-normal.woff2 ***!
-  \******************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "03aaa8cef850004fcdce.woff2";
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff":
+/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff":
 /*!********************************************************************************!*\
-  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff ***!
+  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff ***!
   \********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "780c3039154684b840c7.woff";
+module.exports = __webpack_require__.p + "cb0988b12658254c002d.woff";
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff2":
+/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff2":
 /*!*********************************************************************************!*\
-  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff2 ***!
+  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff2 ***!
   \*********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "29456ffa33d4f710c56e.woff2";
+module.exports = __webpack_require__.p + "1c0db83052078ac8c506.woff2";
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-400-normal.woff":
+/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-300-normal.woff":
 /*!************************************************************************************!*\
-  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-400-normal.woff ***!
+  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-300-normal.woff ***!
   \************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "0bb11634423ce19d490a.woff";
+module.exports = __webpack_require__.p + "af568ada7f44d9e4d83d.woff";
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-400-normal.woff2":
+/***/ "./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-300-normal.woff2":
 /*!*************************************************************************************!*\
-  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-400-normal.woff2 ***!
+  !*** ./node_modules/@fontsource/urbanist/files/urbanist-latin-ext-300-normal.woff2 ***!
   \*************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "fbda94a57fe760744c0e.woff2";
+module.exports = __webpack_require__.p + "0defbea7b8328cb255f0.woff2";
 
 /***/ }),
 
@@ -2152,8 +1955,8 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _fontsource_urbanist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fontsource/urbanist */ "./node_modules/@fontsource/urbanist/index.css");
-/* harmony import */ var _fontsource_noto_serif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/noto-serif */ "./node_modules/@fontsource/noto-serif/index.css");
+/* harmony import */ var _fontsource_urbanist_300_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fontsource/urbanist/300.css */ "./node_modules/@fontsource/urbanist/300.css");
+/* harmony import */ var _fontsource_noto_serif_latin_400_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/noto-serif/latin-400.css */ "./node_modules/@fontsource/noto-serif/latin-400.css");
 /* harmony import */ var _loadPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loadPage */ "./src/loadPage.js");
 /* harmony import */ var _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/facebook.svg */ "./src/assets/facebook.svg");
 /* harmony import */ var _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/yelp.svg */ "./src/assets/yelp.svg");
@@ -2203,9 +2006,9 @@ facebookLogo.src = _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_4__
 yelpLogo.src = _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_5__
 bbbLogo.src = _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_6__
 
-facebookLogo.classList.add('icon')
-yelpLogo.classList.add('icon')
-bbbLogo.classList.add('icon','scaled')
+facebookLogo.classList.add('icon', 'button')
+yelpLogo.classList.add('icon', 'button')
+bbbLogo.classList.add('icon','scaled', 'button')
 
 document.querySelector('#socials p').append(facebookLogo, yelpLogo, bbbLogo)
 
