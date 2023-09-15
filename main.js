@@ -1586,12 +1586,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// TEMPLATE
-
-document.querySelector('#title h1').classList.add('title-font')
-
 // LOREM IPSUM
-;
+
 
 const lorem = new lorem_ipsum__WEBPACK_IMPORTED_MODULE_4__.LoremIpsum({
   sentencesPerParagraph: {
@@ -1608,14 +1604,14 @@ const lorem = new lorem_ipsum__WEBPACK_IMPORTED_MODULE_4__.LoremIpsum({
 // lorem.generateParagraphs(7);
 // lorem.generateSentences(5)
 
-// PICTURES
+// about us module pictures
 let andyPic = new Image(400,400)
 andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_2__
 
 let debbiePic = new Image(400, 400)
 debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_3__
 
-// MODULE
+// html loading module
 function loadPage(event) {
 
     // console.log('test loadPage.js')
@@ -1639,6 +1635,9 @@ function loadPage(event) {
 
         container.innerHTML = ''
     }
+
+    // default
+
 
     let module = event.target.textContent
 
@@ -1666,8 +1665,8 @@ function loadPage(event) {
 
     } else if (module === 'Menu') {
 
-        title.innerHTML = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.title
-        body.innerHTML = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.content
+        title.innerHTML = menu.title
+        body.innerHTML = menu.content
 
         container.append(title, body)
     }
@@ -1684,12 +1683,15 @@ function loadPage(event) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   menu: () => (/* binding */ menu)
+/* harmony export */   menuLoader: () => (/* binding */ menuLoader)
 /* harmony export */ });
 
 
-let menu = {
+function menuLoader(x) {
+    return {x}
+}
 
+let menu = {
     title: 'Menu',
     content: 'TBD',
 }
@@ -1975,7 +1977,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-  // G MAP
+  // MAP
 let map;
 
 async function initMap() {
@@ -2003,7 +2005,21 @@ async function initMap() {
 
 initMap();
 
-// ICONS
+// #HEADER SECTION
+document.querySelector('#title h1').classList.add('title-font')
+
+// BUTTONS
+let aboutBtn = document.querySelector('#navbar :last-child')
+let menuBtn = document.querySelector('#navbar :first-child')
+
+aboutBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
+menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
+
+// #CONTENT
+
+document.querySelector('#modules').insertAdjacentElement
+
+// #FOOTER
 let facebookLogo = new Image(30,30)
 let yelpLogo = new Image(30, 30)
 let bbbLogo = new Image(30,30)
@@ -2017,13 +2033,6 @@ yelpLogo.classList.add('icon', 'button')
 bbbLogo.classList.add('icon','scaled', 'button')
 
 document.querySelector('#socials p').append(facebookLogo, yelpLogo, bbbLogo)
-
-// BUTTONS
-let aboutBtn = document.querySelector('#navbar :last-child')
-let menuBtn = document.querySelector('#navbar :first-child')
-
-aboutBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
-menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
 })();
 
 /******/ })()
