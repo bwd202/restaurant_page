@@ -1,12 +1,8 @@
 export {loadPage}
 import { aboutUs } from './aboutUs';
-import {menu} from './menu'
+import {menuLoader} from './menu'
 import andy from './assets/andy-hay.jpg'
 import debbie from './assets/debbie-tea.jpg'
-
-// TEMPLATE
-
-document.querySelector('#title h1').classList.add('title-font')
 
 // LOREM IPSUM
 import { LoremIpsum } from "lorem-ipsum";
@@ -26,14 +22,14 @@ const lorem = new LoremIpsum({
 // lorem.generateParagraphs(7);
 // lorem.generateSentences(5)
 
-// PICTURES
+// about us module pictures
 let andyPic = new Image(400,400)
 andyPic.src = andy
 
 let debbiePic = new Image(400, 400)
 debbiePic.src = debbie
 
-// MODULE
+// html loading module
 function loadPage(event) {
 
     // console.log('test loadPage.js')
@@ -57,6 +53,9 @@ function loadPage(event) {
 
         container.innerHTML = ''
     }
+
+    // default
+
 
     let module = event.target.textContent
 

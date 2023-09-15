@@ -6,7 +6,7 @@ import facebook from './assets/facebook.svg'
 import yelp from './assets/yelp.svg'
 import bbb from './assets/bbb.svg'
 
-  // G MAP
+  // MAP
 let map;
 
 async function initMap() {
@@ -34,7 +34,21 @@ async function initMap() {
 
 initMap();
 
-// ICONS
+// #HEADER SECTION
+document.querySelector('#title h1').classList.add('title-font')
+
+// BUTTONS
+let aboutBtn = document.querySelector('#navbar :last-child')
+let menuBtn = document.querySelector('#navbar :first-child')
+
+aboutBtn.addEventListener('click', loadPage)
+menuBtn.addEventListener('click', loadPage)
+
+// #CONTENT
+
+document.querySelector('#modules').insertAdjacentElement
+
+// #FOOTER
 let facebookLogo = new Image(30,30)
 let yelpLogo = new Image(30, 30)
 let bbbLogo = new Image(30,30)
@@ -48,10 +62,3 @@ yelpLogo.classList.add('icon', 'button')
 bbbLogo.classList.add('icon','scaled', 'button')
 
 document.querySelector('#socials p').append(facebookLogo, yelpLogo, bbbLogo)
-
-// BUTTONS
-let aboutBtn = document.querySelector('#navbar :last-child')
-let menuBtn = document.querySelector('#navbar :first-child')
-
-aboutBtn.addEventListener('click', loadPage)
-menuBtn.addEventListener('click', loadPage)
