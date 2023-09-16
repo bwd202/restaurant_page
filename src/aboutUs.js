@@ -28,9 +28,9 @@ andyPic.src = andy
 let debbiePic = new Image(400, 400)
 debbiePic.src = debbie
 
-let aboutUs = {
-    title: 'ABOUT US',
-    content: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
+let pageContent = {
+    heading: 'ABOUT US',
+    text: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
 }
 
 // HTML
@@ -52,9 +52,9 @@ function createPage() {
 
     let moduleWrap = new DocumentFragment()
 
-    title.innerHTML = aboutUs.title
+    title.innerHTML = pageContent.heading
 
-    body.insertAdjacentHTML('afterbegin', aboutUs.content)
+    body.insertAdjacentHTML('afterbegin', pageContent.text)
 
     body.insertAdjacentElement('beforeend', imgWrapper1)
 

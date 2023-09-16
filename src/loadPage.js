@@ -42,25 +42,6 @@ function loadPage(event) {
 
     if(module === 'About Us') {
 
-        // title.innerHTML = aboutUs.title
-
-        // body.insertAdjacentHTML('afterbegin', aboutUs.content)
-
-        // body.insertAdjacentElement('beforeend', imgWrapper1)
-
-        // imgWrapper1.insertAdjacentElement('beforeend', andyPic)
-
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-
-        // body.insertAdjacentElement('beforeend', imgWrapper2)
-        // imgWrapper2.insertAdjacentElement('afterbegin', debbiePic)
-
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-
-        // container.append(title, body)
         container.append(createPage())
 
     } else if (module === 'Menu') {

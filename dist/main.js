@@ -1589,9 +1589,9 @@ andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_0__
 let debbiePic = new Image(400, 400)
 debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_1__
 
-let aboutUs = {
-    title: 'ABOUT US',
-    content: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
+let pageContent = {
+    heading: 'ABOUT US',
+    text: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
 }
 
 // HTML
@@ -1613,9 +1613,9 @@ function createPage() {
 
     let moduleWrap = new DocumentFragment()
 
-    title.innerHTML = aboutUs.title
+    title.innerHTML = pageContent.heading
 
-    body.insertAdjacentHTML('afterbegin', aboutUs.content)
+    body.insertAdjacentHTML('afterbegin', pageContent.text)
 
     body.insertAdjacentElement('beforeend', imgWrapper1)
 
@@ -1697,25 +1697,6 @@ function loadPage(event) {
 
     if(module === 'About Us') {
 
-        // title.innerHTML = aboutUs.title
-
-        // body.insertAdjacentHTML('afterbegin', aboutUs.content)
-
-        // body.insertAdjacentElement('beforeend', imgWrapper1)
-
-        // imgWrapper1.insertAdjacentElement('beforeend', andyPic)
-
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-
-        // body.insertAdjacentElement('beforeend', imgWrapper2)
-        // imgWrapper2.insertAdjacentElement('afterbegin', debbiePic)
-
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-
-        // container.append(title, body)
         container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.createPage)())
 
     } else if (module === 'Menu') {
