@@ -1554,13 +1554,89 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   aboutUs: () => (/* binding */ aboutUs)
+/* harmony export */   createPage: () => (/* binding */ createPage)
 /* harmony export */ });
+/* harmony import */ var _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/andy-hay.jpg */ "./src/assets/andy-hay.jpg");
+/* harmony import */ var _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/debbie-tea.jpg */ "./src/assets/debbie-tea.jpg");
+/* harmony import */ var lorem_ipsum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lorem-ipsum */ "./node_modules/lorem-ipsum/dist/index.js");
+// export {aboutUs}
 
+;
+
+
+
+// Lorem Ipsum script
+
+const lorem = new lorem_ipsum__WEBPACK_IMPORTED_MODULE_2__.LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 4
+  },
+  wordsPerSentence: {
+    max: 16,
+    min: 4
+  }
+});
+
+// lorem.generateWords(1);
+// lorem.generateParagraphs(7);
+// lorem.generateSentences(5)
+
+// About Us pictures
+let andyPic = new Image(400,400)
+andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_0__
+
+let debbiePic = new Image(400, 400)
+debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_1__
 
 let aboutUs = {
     title: 'ABOUT US',
     content: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
+}
+
+// HTML
+let title = document.createElement('h2')
+title.classList.add('title-font')
+
+let body = document.createElement('div')
+body.classList.add('txt-wrapper')
+
+let imgWrapper1 = document.createElement('div')
+let imgWrapper2 = document.createElement('div')
+
+imgWrapper1.classList.add('img-wrapper')
+imgWrapper2.classList.add('img-wrapper')
+
+// let container = document.querySelector('#modules')
+
+function createPage() {
+
+    let moduleWrap = new DocumentFragment()
+
+    title.innerHTML = aboutUs.title
+
+    body.insertAdjacentHTML('afterbegin', aboutUs.content)
+
+    body.insertAdjacentElement('beforeend', imgWrapper1)
+
+    imgWrapper1.insertAdjacentElement('beforeend', andyPic)
+
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+
+    body.insertAdjacentElement('beforeend', imgWrapper2)
+    imgWrapper2.insertAdjacentElement('afterbegin', debbiePic)
+
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+
+    // container.append(title, body)
+
+    moduleWrap.append(title, body)
+
+    return moduleWrap
+
 }
 
 /***/ }),
@@ -1577,68 +1653,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _aboutUs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aboutUs */ "./src/aboutUs.js");
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
-/* harmony import */ var _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/andy-hay.jpg */ "./src/assets/andy-hay.jpg");
-/* harmony import */ var _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/debbie-tea.jpg */ "./src/assets/debbie-tea.jpg");
-/* harmony import */ var lorem_ipsum__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lorem-ipsum */ "./node_modules/lorem-ipsum/dist/index.js");
 
+// import { aboutUs } from './aboutUs';
 ;
 
+// import andy from './assets/andy-hay.jpg'
+// import debbie from './assets/debbie-tea.jpg'
 
+// // about us module pictures
+// let andyPic = new Image(400,400)
+// andyPic.src = andy
 
-
-// LOREM IPSUM
-
-
-const lorem = new lorem_ipsum__WEBPACK_IMPORTED_MODULE_4__.LoremIpsum({
-  sentencesPerParagraph: {
-    max: 8,
-    min: 4
-  },
-  wordsPerSentence: {
-    max: 16,
-    min: 4
-  }
-});
-
-// lorem.generateWords(1);
-// lorem.generateParagraphs(7);
-// lorem.generateSentences(5)
-
-// about us module pictures
-let andyPic = new Image(400,400)
-andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_2__
-
-let debbiePic = new Image(400, 400)
-debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_3__
+// let debbiePic = new Image(400, 400)
+// debbiePic.src = debbie
 
 // html loading module
-function loadPage(event = 'default') {
+function loadPage(event) {
 
     // console.log('test loadPage.js')
 
-    let title = document.createElement('h2')
-    title.classList.add('title-font')
+    // let title = document.createElement('h2')
+    // title.classList.add('title-font')
 
-    let body = document.createElement('div')
-    body.classList.add('txt-wrapper')
+    // let body = document.createElement('div')
+    // body.classList.add('txt-wrapper')
 
-    let imgWrapper1 = document.createElement('div')
-    let imgWrapper2 = document.createElement('div')
+    // let imgWrapper1 = document.createElement('div')
+    // let imgWrapper2 = document.createElement('div')
 
-    imgWrapper1.classList.add('img-wrapper')
-    imgWrapper2.classList.add('img-wrapper')
+    // imgWrapper1.classList.add('img-wrapper')
+    // imgWrapper2.classList.add('img-wrapper')
 
     let container = document.querySelector('#modules')
-
-    // default
-    if(event === 'default')
-    title.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.title
-    body.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.content
-
-    container.append(title, body)
-
-    // let cond = 'default'
-
 
     if(container.hasChildNodes()) {
 
@@ -1646,28 +1692,31 @@ function loadPage(event = 'default') {
     }
 
     let module = event.target.textContent
+    
+    // about us page
 
     if(module === 'About Us') {
 
-        title.innerHTML = _aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs.title
+        // title.innerHTML = aboutUs.title
 
-        body.insertAdjacentHTML('afterbegin', _aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs.content)
+        // body.insertAdjacentHTML('afterbegin', aboutUs.content)
 
-        body.insertAdjacentElement('beforeend', imgWrapper1)
+        // body.insertAdjacentElement('beforeend', imgWrapper1)
 
-        imgWrapper1.insertAdjacentElement('beforeend', andyPic)
+        // imgWrapper1.insertAdjacentElement('beforeend', andyPic)
 
-        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
-        body.insertAdjacentElement('beforeend', imgWrapper2)
-        imgWrapper2.insertAdjacentElement('afterbegin', debbiePic)
+        // body.insertAdjacentElement('beforeend', imgWrapper2)
+        // imgWrapper2.insertAdjacentElement('afterbegin', debbiePic)
 
-        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-        body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+        // body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
-        container.append(title, body)
+        // container.append(title, body)
+        container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.createPage)())
 
     } else if (module === 'Menu') {
 
