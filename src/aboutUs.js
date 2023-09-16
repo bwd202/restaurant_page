@@ -1,5 +1,4 @@
-// export {aboutUs}
-export {createPage}
+export {aboutUs}
 import andy from './assets/andy-hay.jpg'
 import debbie from './assets/debbie-tea.jpg'
 import { LoremIpsum } from "lorem-ipsum";
@@ -48,7 +47,7 @@ imgWrapper2.classList.add('img-wrapper')
 
 // let container = document.querySelector('#modules')
 
-function createPage() {
+function aboutUs() {
 
     let moduleWrap = new DocumentFragment()
 

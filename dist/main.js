@@ -1554,12 +1554,11 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   createPage: () => (/* binding */ createPage)
+/* harmony export */   aboutUs: () => (/* binding */ aboutUs)
 /* harmony export */ });
 /* harmony import */ var _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/andy-hay.jpg */ "./src/assets/andy-hay.jpg");
 /* harmony import */ var _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/debbie-tea.jpg */ "./src/assets/debbie-tea.jpg");
 /* harmony import */ var lorem_ipsum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lorem-ipsum */ "./node_modules/lorem-ipsum/dist/index.js");
-// export {aboutUs}
 
 ;
 
@@ -1609,7 +1608,7 @@ imgWrapper2.classList.add('img-wrapper')
 
 // let container = document.querySelector('#modules')
 
-function createPage() {
+function aboutUs() {
 
     let moduleWrap = new DocumentFragment()
 
@@ -1654,7 +1653,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _aboutUs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aboutUs */ "./src/aboutUs.js");
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
 
-// import { aboutUs } from './aboutUs';
 ;
 
 // import andy from './assets/andy-hay.jpg'
@@ -1697,7 +1695,7 @@ function loadPage(event) {
 
     if(module === 'About Us') {
 
-        container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.createPage)())
+        container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs)())
 
     } else if (module === 'Menu') {
 

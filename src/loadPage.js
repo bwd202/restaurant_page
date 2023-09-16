@@ -1,6 +1,5 @@
 export {loadPage}
-// import { aboutUs } from './aboutUs';
-import {createPage} from './aboutUs'
+import { aboutUs } from './aboutUs';
 import {menu} from './menu'
 // import andy from './assets/andy-hay.jpg'
 // import debbie from './assets/debbie-tea.jpg'
@@ -42,7 +41,7 @@ function loadPage(event) {
 
     if(module === 'About Us') {
 
-        container.append(createPage())
+        container.append(aboutUs())
 
     } else if (module === 'Menu') {
 
