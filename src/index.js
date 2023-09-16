@@ -2,7 +2,6 @@ import './style.css'
 import "@fontsource/urbanist/300.css"
 import "@fontsource/noto-serif/latin-400.css"
 import {loadPage} from './loadPage'
-// import {menu} from './menu'
 import facebook from './assets/facebook.svg'
 import yelp from './assets/yelp.svg'
 import bbb from './assets/bbb.svg'
@@ -35,27 +34,21 @@ async function initMap() {
 
 initMap();
 
-// #HEADER SECTION
+// Additions to index.html
 document.querySelector('#title h1').classList.add('title-font')
 
-// BUTTONS
+// buttons
 let aboutBtn = document.querySelector('#navbar :last-child')
 let menuBtn = document.querySelector('#navbar :first-child')
 
 aboutBtn.addEventListener('click', loadPage)
 menuBtn.addEventListener('click', loadPage)
 
-// #CONTENT
+// default loaded module
 
-// document.querySelector('body').addEventListener('load', loadPage)
+let container = document.querySelector('#modules')
 
-// document.querySelector('#modules').insertAdjacentElement
-
-// let content = new DocumentFragment()
-
-// content.append(menu.title, menu.content)
-
-// document.onload(document.write(content))
+container.append('coming')
 
 // #FOOTER
 let facebookLogo = new Image(30,30)
