@@ -2001,7 +2001,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import {menu} from './menu'
 
 
 
@@ -2034,27 +2033,21 @@ async function initMap() {
 
 initMap();
 
-// #HEADER SECTION
+// Additions to index.html
 document.querySelector('#title h1').classList.add('title-font')
 
-// BUTTONS
+// buttons
 let aboutBtn = document.querySelector('#navbar :last-child')
 let menuBtn = document.querySelector('#navbar :first-child')
 
 aboutBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
 menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPage)
 
-// #CONTENT
+// default loaded module
 
-// document.querySelector('body').addEventListener('load', loadPage)
+let container = document.querySelector('#modules')
 
-// document.querySelector('#modules').insertAdjacentElement
-
-// let content = new DocumentFragment()
-
-// content.append(menu.title, menu.content)
-
-// document.onload(document.write(content))
+container.append('coming')
 
 // #FOOTER
 let facebookLogo = new Image(30,30)
