@@ -1655,32 +1655,11 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 
-// import andy from './assets/andy-hay.jpg'
-// import debbie from './assets/debbie-tea.jpg'
 
-// // about us module pictures
-// let andyPic = new Image(400,400)
-// andyPic.src = andy
-
-// let debbiePic = new Image(400, 400)
-// debbiePic.src = debbie
-
-// html loading module
+// loads html modules into index.html via js
 function loadPage(event) {
 
     // console.log('test loadPage.js')
-
-    // let title = document.createElement('h2')
-    // title.classList.add('title-font')
-
-    // let body = document.createElement('div')
-    // body.classList.add('txt-wrapper')
-
-    // let imgWrapper1 = document.createElement('div')
-    // let imgWrapper2 = document.createElement('div')
-
-    // imgWrapper1.classList.add('img-wrapper')
-    // imgWrapper2.classList.add('img-wrapper')
 
     let container = document.querySelector('#modules')
 
@@ -1699,14 +1678,7 @@ function loadPage(event) {
 
     } else if (module === 'Menu') {
 
-        // let menu = menuLoader()
-
-        // console.log(menu)
-
-        title.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.title
-        body.textContent = _menu__WEBPACK_IMPORTED_MODULE_1__.menu.content
-
-        container.append(title, body)
+        container.append((0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)())
     }
 
 }
@@ -1725,14 +1697,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 
 
-// function menuLoader() {
-//     return {menu}
-// }
-
-let menu = {
-    title: 'Menu',
-    content: 'TBD',
+let pageContent = {
+    heading: 'Menu',
+    text: 'TBD',
 }
+
+// HTML
+
+let title = document.createElement('h2')
+title.classList.add('title-font')
+
+let body = document.createElement('div')
+body.classList.add('txt-wrapper')
+
+function menu() {
+    let wrapper = new DocumentFragment()
+
+    title.innerHTML = pageContent.heading
+    body.innerHTML = pageContent.text
+
+    wrapper.append(title, body)
+
+    return wrapper
+}
+
+
+
 
 /***/ }),
 
