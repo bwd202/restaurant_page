@@ -2001,9 +2001,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fontsource_urbanist_300_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fontsource/urbanist/300.css */ "./node_modules/@fontsource/urbanist/300.css");
 /* harmony import */ var _fontsource_noto_serif_latin_400_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/noto-serif/latin-400.css */ "./node_modules/@fontsource/noto-serif/latin-400.css");
 /* harmony import */ var _loadPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loadPage */ "./src/loadPage.js");
-/* harmony import */ var _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/facebook.svg */ "./src/assets/facebook.svg");
-/* harmony import */ var _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/yelp.svg */ "./src/assets/yelp.svg");
-/* harmony import */ var _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/bbb.svg */ "./src/assets/bbb.svg");
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+/* harmony import */ var _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/facebook.svg */ "./src/assets/facebook.svg");
+/* harmony import */ var _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/yelp.svg */ "./src/assets/yelp.svg");
+/* harmony import */ var _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/bbb.svg */ "./src/assets/bbb.svg");
+
 
 
 
@@ -2054,16 +2056,16 @@ menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPag
 
 let container = document.querySelector('#modules')
 
-// container.append(loadPage(event.target.textContent = 'menu'))
+container.append((0,_menu__WEBPACK_IMPORTED_MODULE_4__.menu)())
 
 // #FOOTER
 let facebookLogo = new Image(30,30)
 let yelpLogo = new Image(30, 30)
 let bbbLogo = new Image(30,30)
 
-facebookLogo.src = _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_4__
-yelpLogo.src = _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_5__
-bbbLogo.src = _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_6__
+facebookLogo.src = _assets_facebook_svg__WEBPACK_IMPORTED_MODULE_5__
+yelpLogo.src = _assets_yelp_svg__WEBPACK_IMPORTED_MODULE_6__
+bbbLogo.src = _assets_bbb_svg__WEBPACK_IMPORTED_MODULE_7__
 
 facebookLogo.classList.add('icon', 'button')
 yelpLogo.classList.add('icon', 'button')
