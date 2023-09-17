@@ -1670,23 +1670,23 @@ function loadPage(event) {
   let container = document.querySelector('#modules')
   let moduleName = event.target.textContent
   // let flag = null
+  
+if(container.hasChildNodes()) {
+    container.innerHTML = ''
+}
 
-  if(container.hasChildNodes()) {
-      container.innerHTML = ''
+if(moduleName === 'About Us') {
+
+  // let flag = false
+  // if(flag != true) {
+    container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs)())
+    // flag = true
   }
 
-  if(moduleName === 'About Us') {
-
-    // let flag = false
-    // if(flag != true) {
-      container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs)())
-      // flag = true
-    }
-
-  if (moduleName === 'Menu') {
+if (moduleName === 'Menu') {
 
     container.append((0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)())
-  }
+}
 
 } 
 
