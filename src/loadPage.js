@@ -5,26 +5,32 @@ import {menu} from './menu'
 // loads html modules into index.html via js
 function loadPage(event) {
 
-    // console.log('test loadPage.js')
+  // console.log('test loadPage.js')
 
-    let container = document.querySelector('#modules')
+  let container = document.querySelector('#modules')
+  let module = event.target.textContent
+  let flag = null
 
     if(container.hasChildNodes()) {
 
         container.innerHTML = ''
+        
     }
-
-    let module = event.target.textContent
-    
-    // about us page
 
     if(module === 'About Us') {
 
+      let flag = false
+
+      if(flag != true) {
+
         container.append(aboutUs())
+        flag = true
 
-    } else if (module === 'Menu') {
+      }
+    
+  } else if (module === 'Menu') {
 
-        container.append(menu())
-    }
+      container.append(menu())
+  }
 
 }

@@ -27,10 +27,10 @@ andyPic.src = andy
 let debbiePic = new Image(400, 400)
 debbiePic.src = debbie
 
-let pageContent = {
-    heading: 'ABOUT US',
-    text: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
-}
+// let pageContent = {
+//     heading: 'ABOUT US',
+//     text: 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.'
+// }
 
 // HTML
 let title = document.createElement('h2')
@@ -51,12 +51,14 @@ function aboutUs() {
 
     let moduleWrap = new DocumentFragment()
 
-    title.innerHTML = pageContent.heading
+    // title.innerHTML = pageContent.heading
+    title.innerHTML = 'about us'
 
-    body.insertAdjacentHTML('afterbegin', pageContent.text)
+    // body.insertAdjacentHTML('afterbegin', pageContent.text)
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
     body.insertAdjacentElement('beforeend', imgWrapper1)
-
     imgWrapper1.insertAdjacentElement('beforeend', andyPic)
 
     body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')

@@ -48,7 +48,7 @@ menuBtn.addEventListener('click', loadPage)
 
 let container = document.querySelector('#modules')
 
-container.append('coming')
+// container.append(loadPage(event.target.textContent = 'menu'))
 
 // #FOOTER
 let facebookLogo = new Image(30,30)
