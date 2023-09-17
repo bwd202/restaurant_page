@@ -1588,11 +1588,6 @@ andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_0__
 let debbiePic = new Image(400, 400)
 debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_1__
 
-// let pageContent = {
-//     heading: 'ABOUT US',
-//     text: 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.'
-// }
-
 // HTML
 let title = document.createElement('h2')
 title.classList.add('title-font')
@@ -1606,8 +1601,7 @@ let imgWrapper2 = document.createElement('div')
 imgWrapper1.classList.add('img-wrapper')
 imgWrapper2.classList.add('img-wrapper')
 
-// let container = document.querySelector('#modules')
-
+// module creator
 function aboutUs() {
 
   if(body.hasChildNodes()) {
@@ -1616,10 +1610,8 @@ function aboutUs() {
 
     let moduleWrap = new DocumentFragment()
 
-    // title.innerHTML = pageContent.heading
     title.innerHTML = 'about us'
 
-    // body.insertAdjacentHTML('afterbegin', pageContent.text)
     body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
     body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
@@ -1635,8 +1627,6 @@ function aboutUs() {
 
     body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
     body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
-
-    // container.append(title, body)
 
     moduleWrap.append(title, body)
 
