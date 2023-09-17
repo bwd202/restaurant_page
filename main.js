@@ -1588,10 +1588,10 @@ andyPic.src = _assets_andy_hay_jpg__WEBPACK_IMPORTED_MODULE_0__
 let debbiePic = new Image(400, 400)
 debbiePic.src = _assets_debbie_tea_jpg__WEBPACK_IMPORTED_MODULE_1__
 
-let pageContent = {
-    heading: 'ABOUT US',
-    text: '<p>' + 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.' + '</p>',
-}
+// let pageContent = {
+//     heading: 'ABOUT US',
+//     text: 'Established in 2009, Pagoda brings together Middle Eastern, Indian and Chinese cuisines for an eclectic palate reminiscent of the cultural exchange that once took place along Central Asia\'s Silk Road.'
+// }
 
 // HTML
 let title = document.createElement('h2')
@@ -1612,12 +1612,14 @@ function aboutUs() {
 
     let moduleWrap = new DocumentFragment()
 
-    title.innerHTML = pageContent.heading
+    // title.innerHTML = pageContent.heading
+    title.innerHTML = 'about us'
 
-    body.insertAdjacentHTML('afterbegin', pageContent.text)
+    // body.insertAdjacentHTML('afterbegin', pageContent.text)
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
+    body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
 
     body.insertAdjacentElement('beforeend', imgWrapper1)
-
     imgWrapper1.insertAdjacentElement('beforeend', andyPic)
 
     body.insertAdjacentHTML('beforeend', '<p>' + lorem.generateParagraphs(1) + '</p>')
@@ -1659,27 +1661,33 @@ __webpack_require__.r(__webpack_exports__);
 // loads html modules into index.html via js
 function loadPage(event) {
 
-    // console.log('test loadPage.js')
+  // console.log('test loadPage.js')
 
-    let container = document.querySelector('#modules')
+  let container = document.querySelector('#modules')
+  let module = event.target.textContent
+  let flag = null
 
     if(container.hasChildNodes()) {
 
         container.innerHTML = ''
+        
     }
-
-    let module = event.target.textContent
-    
-    // about us page
 
     if(module === 'About Us') {
 
+      let flag = false
+
+      if(flag != true) {
+
         container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs)())
+        flag = true
 
-    } else if (module === 'Menu') {
+      }
+    
+  } else if (module === 'Menu') {
 
-        container.append((0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)())
-    }
+      container.append((0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)())
+  }
 
 }
 
@@ -2047,7 +2055,7 @@ menuBtn.addEventListener('click', _loadPage__WEBPACK_IMPORTED_MODULE_3__.loadPag
 
 let container = document.querySelector('#modules')
 
-container.append('coming')
+// container.append(loadPage(event.target.textContent = 'menu'))
 
 // #FOOTER
 let facebookLogo = new Image(30,30)
