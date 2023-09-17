@@ -1610,6 +1610,10 @@ imgWrapper2.classList.add('img-wrapper')
 
 function aboutUs() {
 
+  if(body.hasChildNodes()) {
+    body.innerHTML = ''
+  }
+
     let moduleWrap = new DocumentFragment()
 
     // title.innerHTML = pageContent.heading
@@ -1664,32 +1668,27 @@ function loadPage(event) {
   // console.log('test loadPage.js')
 
   let container = document.querySelector('#modules')
-  let module = event.target.textContent
-  let flag = null
+  let moduleName = event.target.textContent
+  // let flag = null
 
-    if(container.hasChildNodes()) {
-
-        container.innerHTML = ''
-        
-    }
-
-    if(module === 'About Us') {
-
-      let flag = false
-
-      if(flag != true) {
-
-        container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs)())
-        flag = true
-
-      }
-    
-  } else if (module === 'Menu') {
-
-      container.append((0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)())
+  if(container.hasChildNodes()) {
+      container.innerHTML = ''
   }
 
-}
+  if(moduleName === 'About Us') {
+
+    // let flag = false
+    // if(flag != true) {
+      container.append((0,_aboutUs__WEBPACK_IMPORTED_MODULE_0__.aboutUs)())
+      // flag = true
+    }
+
+  if (moduleName === 'Menu') {
+
+    container.append((0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)())
+  }
+
+} 
 
 /***/ }),
 

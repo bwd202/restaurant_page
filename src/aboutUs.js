@@ -49,6 +49,10 @@ imgWrapper2.classList.add('img-wrapper')
 
 function aboutUs() {
 
+  if(body.hasChildNodes()) {
+    body.innerHTML = ''
+  }
+
     let moduleWrap = new DocumentFragment()
 
     // title.innerHTML = pageContent.heading
