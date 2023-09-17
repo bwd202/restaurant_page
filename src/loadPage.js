@@ -9,18 +9,16 @@ function loadPage(event) {
 
   let container = document.querySelector('#modules')
   let moduleName = event.target.textContent
-  // let flag = null
   
 if(container.hasChildNodes()) {
+
     container.innerHTML = ''
 }
 
 if(moduleName === 'About Us') {
 
-  // let flag = false
-  // if(flag != true) {
     container.append(aboutUs())
-    // flag = true
+
   }
 
 if (moduleName === 'Menu') {
