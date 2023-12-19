@@ -1,6 +1,6 @@
 import './style.css'
-import "@fontsource/urbanist/300.css"
-import "@fontsource/noto-serif/latin-400.css"
+import "@fontsource/urbanist/latin-400.css"
+import "@fontsource/noto-serif/latin-300.css"
 import {loadPage} from './loadPage'
 import {menu} from './menu'
 import facebook from './assets/facebook.svg'

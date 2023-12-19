@@ -13,9 +13,7 @@ body {
     color: white;
     display: grid;
     grid-template-rows: 200px 1fr 250px;
-    background-color: black;
-    background-image: url(./assets/pagoda-background.jpg);
-    background-repeat: no-repeat;
+    background: url(./assets/pagoda-background.jpg) no-repeat;
     font-size: 1.2em;
 }
 
