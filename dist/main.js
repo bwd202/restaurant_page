@@ -171,26 +171,23 @@ body {
 }
 
 #header {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 20px 0;
-    align-content: center;
+    /* padding: 20px 0; */
+    /* align-content: center; */
+    align-items: center;
+    white-space: nowrap;
 }
 
 #home {
-    position: relative;
-    /* display: grid; */
+    /* position: relative; */
+    /* margin: 60px; */
 }
 
 #home p {
-    margin-left: 60px;
-    scale: 1.2;
-    position: absolute;
-    top: 5px;
+    float: left;
+    margin-left: 50px;
     border: 1px solid white;
-}
-
-#home .button {
     scale: 1.7;
 }
 
@@ -251,7 +248,7 @@ body {
 #map {
     margin: 15px;
     width: 60%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,6BAA6B;AACjC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,6DAAyD;IACzD,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,mCAAmC;IACnC,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA,eAAe;;AAEf;IACI,aAAa;IACb,kCAAkC;AACtC;;AAEA,WAAW;;AAEX;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,mBAAmB;AACvB;;AAEA,YAAY;;AAEZ;IACI,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,kCAAkC;IAClC,eAAe;IACf,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,UAAU;IACV,kBAAkB;IAClB,QAAQ;IACR,uBAAuB;AAC3B;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,wCAAwC;IACxC,aAAa;IACb,aAAa;AACjB;;AAEA;IACI,mBAAmB;IACnB,gCAAgC;AACpC;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.75);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 200px 1fr 250px;\n    background: url(./assets/pagoda-background.jpg) no-repeat;\n    font-size: 1.2em;\n}\n\n/* Classes */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n.title-font {\n    font-family: 'Urbanist', sans-serif;\n    font-weight: 300;\n    font-size: 1.7em;\n}\n\n/* Paragraphs */\n\n.txt-wrapper {\n    padding: 30px;\n    background-color: var(--softBlack);\n}\n\n/* Images */\n\n.img-wrapper:first-of-type {\n    float: right;\n    /* padding-right: 40px; */\n}\n\n.img-wrapper:last-of-type {\n    float: left;\n    padding-right: 10px;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: black;\n}\n\n#header {\n    display: inline-grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    padding: 20px 0;\n    align-content: center;\n}\n\n#home {\n    position: relative;\n    /* display: grid; */\n}\n\n#home p {\n    margin-left: 60px;\n    scale: 1.2;\n    position: absolute;\n    top: 5px;\n    border: 1px solid white;\n}\n\n#home .button {\n    scale: 1.7;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.2);\n    padding: 50px;\n    margin: 100px;\n}\n\n#modules p { \n    margin-bottom: 10px;\n    font-family: 'Noto Serif', serif;\n} \n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,6BAA6B;AACjC;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,aAAa;IACb,mCAAmC;IACnC,6DAAyD;IACzD,gBAAgB;AACpB;;AAEA,YAAY;;AAEZ;IACI,eAAe;AACnB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,mCAAmC;IACnC,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA,eAAe;;AAEf;IACI,aAAa;IACb,kCAAkC;AACtC;;AAEA,WAAW;;AAEX;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,mBAAmB;AACvB;;AAEA,YAAY;;AAEZ;IACI,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;IACrB,2BAA2B;IAC3B,mBAAmB;IACnB,mBAAmB;AACvB;;AAEA;IACI,wBAAwB;IACxB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,iBAAiB;IACjB,uBAAuB;IACvB,UAAU;AACd;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,qBAAqB;IACrB,UAAU;IACV,iBAAiB;IACjB,wCAAwC;IACxC,aAAa;IACb,aAAa;AACjB;;AAEA;IACI,mBAAmB;IACnB,gCAAgC;AACpC;;AAEA,YAAY;;AAEZ;IACI,aAAa;IACb,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,UAAU;AACd","sourcesContent":[":root {\n    --softBlack: rgba(0,0,0,0.75);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n    color: white;\n    display: grid;\n    grid-template-rows: 200px 1fr 250px;\n    background: url(./assets/pagoda-background.jpg) no-repeat;\n    font-size: 1.2em;\n}\n\n/* Classes */\n\n.button {\n    cursor: pointer;\n}\n\n.icon {\n    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);\n}\n\n.scaled {\n    scale: 2.7;\n}\n\n.title-font {\n    font-family: 'Urbanist', sans-serif;\n    font-weight: 300;\n    font-size: 1.7em;\n}\n\n/* Paragraphs */\n\n.txt-wrapper {\n    padding: 30px;\n    background-color: var(--softBlack);\n}\n\n/* Images */\n\n.img-wrapper:first-of-type {\n    float: right;\n    /* padding-right: 40px; */\n}\n\n.img-wrapper:last-of-type {\n    float: left;\n    padding-right: 10px;\n}\n\n/* #HEADER */\n\n#header, #footer {\n    background-color: black;\n}\n\n#header {\n    display: grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    /* padding: 20px 0; */\n    /* align-content: center; */\n    align-items: center;\n    white-space: nowrap;\n}\n\n#home {\n    /* position: relative; */\n    /* margin: 60px; */\n}\n\n#home p {\n    float: left;\n    margin-left: 50px;\n    border: 1px solid white;\n    scale: 1.7;\n}\n\n#title {\n    justify-self: center;\n}\n\n#navbar {\n    display: flex;\n    justify-content: flex-end;\n}\n\n#navbar :last-child {\n    margin-left: 30px;\n    margin-right: 60px;\n}\n\n/* #CONTENT */\n\n#content {\n    display: grid;\n    justify-items: center;\n}\n\n#modules {\n    display: grid;\n    gap: 40px;\n    justify-items: center;\n    width: 80%;\n    /* height: 80%; */\n    background-color: rgba(255, 217, 0, 0.2);\n    padding: 50px;\n    margin: 100px;\n}\n\n#modules p { \n    margin-bottom: 10px;\n    font-family: 'Noto Serif', serif;\n} \n\n/* #FOOTER */\n\n#footer {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    justify-items: center;\n}\n\n#socials, #address {\n    align-self: center;\n}\n\n#socials p {\n    display: flex;\n    gap: 40px;\n}\n\n#map {\n    margin: 15px;\n    width: 60%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

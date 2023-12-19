@@ -63,26 +63,23 @@ body {
 }
 
 #header {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 20px 0;
-    align-content: center;
+    /* padding: 20px 0; */
+    /* align-content: center; */
+    align-items: center;
+    white-space: nowrap;
 }
 
 #home {
-    position: relative;
-    /* display: grid; */
+    /* position: relative; */
+    /* margin: 60px; */
 }
 
 #home p {
-    margin-left: 60px;
-    scale: 1.2;
-    position: absolute;
-    top: 5px;
+    float: left;
+    margin-left: 50px;
     border: 1px solid white;
-}
-
-#home .button {
     scale: 1.7;
 }
 
