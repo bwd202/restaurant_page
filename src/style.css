@@ -17,7 +17,7 @@ body {
     font-size: 1.2em;
 }
 
-/* Classes */
+/* CLASSES */
 
 .button {
     cursor: pointer;
@@ -65,15 +65,8 @@ body {
 #header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    /* padding: 20px 0; */
-    /* align-content: center; */
     align-items: center;
     white-space: nowrap;
-}
-
-#home {
-    /* position: relative; */
-    /* margin: 60px; */
 }
 
 #home p {
